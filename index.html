@@ -16,19 +16,32 @@ layout: default
 <ul>
 <img src="/static/onionbrowser/obscreens.png" alt="Onion Browser screen shots" tyle="width:100%"/>
 </ul>
+   <p id="security-advisories"><b>Current security advisories (last updated 2019-06-18):</b></p>
+  <ul>
+    <li>
+    <p class="mid"><b>WebRTC/Media leaks:</b> Due to iOS limitations, <b>WebRTC and media files leak outside of Tor</b> and are routed over the normal internet. This will reveal your real IP address to sites using these features. (If you are using a VPN, the VPN IP address is revealed instead.) To defend against this, you may <a href="https://github.com/OnionBrowser/OnionBrowser/issues/117#issuecomment-500170915">set Strict security mode in Host Settings</a>, which will disable Javascript. <a href="https://github.com/OnionBrowser/OnionBrowser/wiki/2018-117:-WebRTC-leaks-real-IP-address-(or-VPN-IP-if-connected-to-a-VPN)">More information here</a>.</p>
+    </li>
+    <li>
+      <p class="mid"><b>OCSP leak:</b> Visiting <b>EV "Green Bar" HTTPS sites</b> may leak information that can be used to reveal the domain name of the website you are visiting. This is handled within iOS and cannot be changed by Onion Browser. There is no known workaround. <a href="https://github.com/OnionBrowser/OnionBrowser/wiki/2019-178:-sites-with-EV-HTTPS-certificates-leak-information-via-OCSP">A detailed report can be found here.</a></p>
+    </li>
+    <li>
+      <p class="mid"><a href="https://github.com/OnionBrowser/OnionBrowser/wiki/Traffic-that-leaks-outside-of-Tor-due-to-iOS-limitations">Further technical information can be found here.</a> Please also see the list of <a href="#caveats">general caveats</a> below.</p>
+    </li>
+  </ul>
   <p><b>Latest news:</b></p>
   <ul>
     <li>
       <p class="mid">Please consider supporting ongoing development by becoming <a href="https://www.patreon.com/OnionBrowser">a Patreon supporter</a>, by using the in-app purchase, or by sending <a href="#support-project">a one-off payment</a>.</p>
     </li>
     <li>
-       <p><b>April 2019:</b> Onion Browser 2.2.0 upgrades Tor to 0.3.5.8, greatly improves reliability when the app comes back from background, and contains more fixes and UI tweaks. Localizations are now available in Turkish, and localizations for most languages have been updated.  Users are encouraged to <a class="store_link" href="https://itunes.apple.com/us/app/onion-browser/id519296448?mt=8&amp;at=10l9R4">update via App Store</a>.</p>
+       <p><b>June 18, 2019:</b> Onion Browser 2.2.1 adds an "open in last state" feature, fixes <a href="https://github.com/OnionBrowser/OnionBrowser/releases/v2.2.1">several bugs</a>, and updates localizations for several languages.  Users are encouraged to <a class="store_link" href="https://itunes.apple.com/us/app/onion-browser/id519296448?mt=8&amp;at=10l9R4">update via App Store</a>.</p>
     </li>
     <li>
-      <p><b>September 9, 2018:</b> Just posted <a href="https://www.patreon.com/posts/lots-of-long-21317240">an update on Patreon</a> about the current state of Onion Browser.</p>
+       <p><b>April 2019:</b> Onion Browser 2.2.0 upgraded Tor to 0.3.5.8, greatly improves reliability when the app comes back from background, and contains more fixes and UI tweaks. Localizations are now available in Turkish, and localizations for most languages have been updated. </p>
     </li>
     <li>
-      <p><b>February 9, 2018:</b> Onion Browser 2.0.3 disables WebRTC if the "Content Policy" setting is set to "Strict" or "No XHR/WebSocket…". WebRTC is known to leak a user's true IP address for Onion Browser users using iOS 11.0 through iOS 11.2.</p>
+      <p><b>September 9, 2018:</b> <a href="https://www.patreon.com/posts/lots-of-long-21317240">An update on Patreon</a> about the current state of Onion Browser.</p>
+    </li>
     </li>
     <li><p><b>December 2016: New Price!</b> Onion Browser is now <b>free</b>. <a href="/blog/2016/12/05/onion-browser-now-free/">Read more about it here</a>. If you'd like to support continuing development of Onion Browser and other Tor iOS projects, please consider <a href="https://www.patreon.com/OnionBrowser" target="_blank">backing the project on Patreon</a> or <a href="#support-project">donate via one of the other options</a>.</p>
     <p>You can read <a href="http://arstechnica.com/security/2017/01/tor-onion-browser-ios-vpn/">coverage about the price change in Ars Technica</a>, and read about the State of iOS Tor <a href='https://blog.torproject.org/blog/tor-heart-onion-browser-and-more-ios-tor'>on the official Tor Project blog</a>.</p>
@@ -148,16 +161,8 @@ layout: default
   <ul>
       <li><b>Disclaimer</b>: Onion Browser only tunnels traffic
           <i>within the Onion Browser app</i>. You are still using a smartphone you should be aware that information outside of Onion Browser will continue to use your normal connection.</li>
-      <li><b>Video note</b>:
-          Websites using
-          HTML5 &lt;video&gt; tags may leak
-          &lt;video&gt;-related DNS queries and data transfer outside
-          of Tor. This includes YouTube, Vimeo, and <i>any</i> website using
-          iOS-compatible HTML5 video. This is due to behavior of the embedded
-          QuickTime player and a comprehensive workaround has not yet been developed.</li>
-      <li><b>JavaScript blocking</b>: The "Active Content Blocking" feature is experimental.
-          If ACB is turned off, JavaScript techniques can identify what type of iOS device you are using and what version of iOS you are using, even if User-Agent Spoofing is enabled.</li>
-      <li><b>Geolocation blocking</b>: Websites may use the HTML5 Geolocation API unless the "Active Content Blocking" feature is set to "Block All". Users should remain
+      <li><b>Limitations in iOS</b>: <a href="https://github.com/OnionBrowser/OnionBrowser/wiki/Traffic-that-leaks-outside-of-Tor-due-to-iOS-limitations">iOS has full control over some network traffic</a>
+      <li><b>Geolocation and other advanced HTML5 features</b>: Websites may use the HTML5 Geolocation API (to view your current GPS location) and other new HTML5 features unless "Strict" security mode is set. Users should also remain
           vigilant for any pop-ups asking for permission to access location data.</li>
       <li><b>Common Sense</b>: If you log into websites in Onion Browser that you normally log into
           outside of the Tor network, they will a) still know who you are,
