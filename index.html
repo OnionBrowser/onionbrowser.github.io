@@ -160,7 +160,8 @@ layout: default
   <ul>
       <li><b>Disclaimer</b>: Onion Browser only tunnels traffic
           <i>within the Onion Browser app</i>. You are still using a smartphone you should be aware that information outside of Onion Browser will continue to use your normal connection.</li>
-      <li><b>Limitations in iOS</b>: <a href="https://github.com/OnionBrowser/OnionBrowser/wiki/Traffic-that-leaks-outside-of-Tor-due-to-iOS-limitations">iOS has full control over some network traffic</a>
+      <li><b>Limitations in iOS</b>: <a href="https://github.com/OnionBrowser/OnionBrowser/wiki/Traffic-that-leaks-outside-of-Tor-due-to-iOS-limitations">iOS has full control over some network traffic</a>, which may result in this traffic (including audio or video embeds) routing via your normal connection and not over Tor</li>
+      <li><b>Time Zone and other basic JavaScript identification</b>: Websites may use Javascript to ask the browser for local time, therefore revealing your real time zone. Disabling Javascript (using the Strict security setting) is the only way to bypass this.</li>
       <li><b>Geolocation and other advanced HTML5 features</b>: Websites may use the HTML5 Geolocation API (to view your current GPS location) and other new HTML5 features unless "Strict" security mode is set. Users should also remain
           vigilant for any pop-ups asking for permission to access location data.</li>
       <li><b>Common Sense</b>: If you log into websites in Onion Browser that you normally log into
