@@ -1,0 +1,229 @@
+/*=======
+CSS INDEX
+=========
+
+1. Base CSS
+
+================================*/
+
+
+/* =============================
+1. Base CSS
+================================*/
+
+.floatleft {
+    float: left;
+}
+
+.floatright {
+    float: right;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+a:focus {
+    outline: 0px solid;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.fix {
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-padding {
+    padding: 60px 0;
+}
+
+.section-gray {
+    background-color: #F7F7F7;
+}
+
+.section-dark {
+    background-color: #110C09;
+    color: #fff;
+}
+
+a {
+    transition: .3s;
+}
+
+a:hover {
+    color: #000;
+}
+
+#cd-menu-trigger {
+    display: none;
+}
+
+/* =========================
+2. Home CSS
+============================*/
+#mobile-header {
+    display: none;
+}
+
+.logo {
+    max-width: 82px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav ul li {
+    display: inline-block;
+    margin-right: 32px;
+}
+
+.main-nav ul li a {
+    color: #4A4A4A;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 34px 0 26px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.oni-btn {
+    max-height: 163px;
+    height: 52px;
+    display: block;
+    background-color: #7ED321;
+    color: #fff;
+    text-align: center;
+    line-height: 52px;
+    border-radius: 25.5px;
+    font-size: 20px;
+}
+
+.header-area {
+    padding: 25px 0 22px;
+}
+
+.donate {
+    padding-top: 16px;
+}
+
+.banner-left h6 {
+    font-size: 27px;
+    color: #232323;
+    text-transform: uppercase;
+    margin-top: 32px;
+    margin-left: 14px;
+}
+
+.banner-left h1 {
+    color: #720E95;
+    font-size: 190px;
+    line-height: 154px;
+    margin-bottom: 60px;
+}
+
+.banner-right {
+    text-align: right;
+}
+
+.banner-right img {
+    max-width: 335px;
+}
+
+.banner-area {
+    padding-top: 50px;
+}
+
+.promo img {
+    max-width: 59px;
+}
+
+.promo .thumb {
+    min-height: 70px;
+    margin-bottom: 22px;
+}
+
+.promo h3 {
+    font-size: 36px;
+    color: #4A4A4A;
+    line-height: 42px;
+}
+
+.promo p {
+    font-size: 25px;
+    color: #4A4A4A;
+    line-height: 42px;
+}
+
+.power-area {
+    background-color: #F7F7F7;
+    padding: 90px 0;
+}
+
+.power-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.power-thumb img {
+    max-width: 111px;
+}
+
+.power-detail h4 {
+    font-size: 24px;
+    color: #632F7B;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.power-detail p {
+    margin-bottom: 0;
+    font-size: 25px;
+    color: #4A4A4A;
+}
+
+.power-link a {
+    font-size: 26px;
+    color: #720E95;
+    font-weight: 700;
+}
