@@ -227,3 +227,169 @@ a:hover {
     color: #720E95;
     font-weight: 700;
 }
+
+.banner-left a img {
+    max-width: 318px;
+}
+
+.detail-inner {
+    max-width: 69%;
+    margin: 0 auto;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+}
+
+.detail-item .d-thumb {
+    margin-right: 5%;
+    width: 42%;
+}
+
+.detail-item .d-desc {
+    width: 53%;
+}
+
+.detail-item .d-desc h4 {
+    font-size: 36px;
+    color: #4A4A4A;
+}
+
+.detail-item .d-desc p {
+    margin-bottom: 0;
+    font-size: 25px;
+    color: #4A4A4A;
+}
+
+.detail-inner .detail-item:nth-child(2n) .d-desc {
+    margin-right: 5%;
+}
+
+.detail-inner .detail-item:nth-child(2n) .d-thumb {
+    margin-right: 0;
+}
+
+.detail-inner .detail-item:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.detail-item {
+    margin-bottom: 30px;
+}
+
+.special-area {
+    background: linear-gradient(137.83deg, #C32AFF 0%, #51036B 55.54%, #490161 100%);
+}
+
+.special-area p {
+    color: #fff;
+    font-size: 24px;
+}
+
+.special-area {
+    padding: 100px 0;
+}
+
+.special-area h2 {
+    color: #fff;
+    font-size: 50px;
+    line-height: 29px;
+}
+
+.dev-area {
+    padding: 100px 0;
+}
+
+.dev-area h2 {
+    font-size: 50px;
+    color: #4A4A4A;
+    line-height: 45px;
+}
+
+.dev-area p {
+    font-size: 25px;
+    color: #4A4A4A;
+}
+
+.dev-area p strong {
+    font-weight: 600;
+    color: #632F7B;
+}
+
+.power-detail h2 {
+    font-size: 70px;
+    color: #4A4A4A;
+    line-height: 66px;
+}
+
+.power-link a.oni-btn {
+    color: #fff;
+    font-weight: normal;
+    font-size: 20px;
+    width: 194px;
+}
+
+.footer-area {
+    padding: 70px 0;
+}
+
+.footer-logo {
+    max-width: 56px;
+    text-align: right;
+    float: right;
+}
+
+.footer-nav ul {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    list-style: none;
+}
+
+.footer-nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer-nav ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #632F7B;
+}
+
+.footer-nav ul li.donate a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #7ED321;
+}
+
+.footer-bottom {
+    padding-top: 50px;
+}
+
+.lang a {
+    color: #000000;
+    font-size: 20px;
+}
+
+.lang {
+    text-align: right;
+}
+
+.dev-inner,
+.bottom .power-inner,
+.ft-inner {
+    max-width: 69%;
+    margin: 0 auto;
+}
+
+.git-btn {
+    display: inline-block;
+    color: #000;
+    background: #F7F7F7;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 4px 10px;
+    font-weight: 500;
+}
