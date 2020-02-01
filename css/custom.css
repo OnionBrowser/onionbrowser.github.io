@@ -393,3 +393,109 @@ a:hover {
     padding: 4px 10px;
     font-weight: 500;
 }
+
+.about-conn.special-area p {
+    color: #fff;
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.about-conn.special-area h2 {
+    color: #fff;
+    font-size: 86px;
+    line-height: 86px;
+    margin-bottom: 0;
+}
+
+.tor-inner {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.tor-header.text-center img {
+    margin-bottom: 25px;
+}
+
+.tor-header p {
+    font-size: 30px;
+    line-height: 44px;
+    color: #4A4A4A;
+}
+
+.tor-header span {
+    font-size: 22px;
+    color: #4A4A4A;
+}
+
+a {
+    color: #720E95;
+    font-weight: 500;
+}
+
+.tor-items {
+    margin-top: 80px;
+}
+
+.tor-items .tor-item {
+    margin-bottom: 50px;
+}
+
+.tor-items .tor-item .ti-thumb {
+    margin-right: 32px;
+}
+
+.tor-items .tor-item h4 {
+    font-size: 36px;
+    color: #4A4A4A;
+    line-height: 24px;
+}
+
+.tor-items .tor-item p {
+    font-size: 25px;
+    color: #4A4A4A;
+    line-height: 42px;
+}
+
+.conneted-area {
+    position: relative;
+}
+
+.conneted-area::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    background: #F7F7F7;
+    width: 100%;
+    z-index: -1;
+}
+
+.tor-items .tor-item {
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.tor-items .tor-item .ti-thumb {
+    margin-right: 32px;
+    min-width: 58px;
+}
+
+.disclaimer-inner h4 {
+    font-size: 36px;
+    color: #4A4A4A;
+}
+
+
+.disclaimer-inner h1 {
+    color: #4A4A4A;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.disclaimer-inner p {
+    font-size: 25px;
+    color: #4A4A4A;
+    margin-bottom: 40px;
+}
