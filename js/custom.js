@@ -4,7 +4,7 @@
     $(document).ready(function () {
         $('#responsive-menu-button').sidr({
             name: 'sidr-main',
-            source: '.main-nav',
+            source: '.main-nav-for-mobile',
             side: 'right'
         });
 

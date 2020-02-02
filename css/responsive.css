@@ -253,7 +253,7 @@
 
     .power-thumb {
         position: absolute;
-        right: 45%;
+        right: 40%;
         top: -6px;
         width: 30px;
     }
@@ -589,6 +589,67 @@
 
     .footer-nav ul li.for-desktop {
         display: none;
+    }
+
+    .footer-nav ul li.donate {
+        padding-top: 0;
+    }
+
+    .rev-for-device {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .featured-area {
+        padding: 40px 0 0;
+    }
+
+    .power-detail h4 {
+        padding-left: 18px;
+        position: relative;
+    }
+
+    .power-detail h4::before {
+        position: absolute;
+        content: "✔";
+        left: 0;
+        top: 0;
+        background: #632F7B;
+        color: #fff;
+        width: 15px;
+        text-align: center;
+        border-radius: 100%;
+    }
+
+    .sidr-class-lang {
+        margin-top: -19px;
+    }
+
+    .sidr .sidr-inner {
+        padding: 55px 25px 15px;
+    }
+
+    .sidr .sidr-class-lang ul li a {
+        font-weight: 300;
+        font-size: 13px;
+        padding-left: 30px;
+    }
+
+    .sidr ul li a,
+    .sidr ul li span {
+        font-size: 20px;
+    }
+
+    .sidr-class-lang ul li {
+        position: relative;
+    }
+
+    .sidr-class-lang ul li::before {
+        position: absolute;
+        left: 13px;
+        top: 0;
+        font-family: fontAwesome;
+        content: "\f0ac";
     }
 }
 

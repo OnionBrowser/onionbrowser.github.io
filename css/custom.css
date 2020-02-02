@@ -126,6 +126,15 @@ a:hover {
     text-transform: uppercase;
 }
 
+.main-nav ul li.active a {
+    color: #730097;
+}
+
+.main-nav ul li a:hover {
+    color: #730097;
+    text-decoration: none;
+}
+
 .oni-btn {
     max-height: 163px;
     height: 52px;
@@ -679,4 +688,8 @@ a {
 
 .banner-area {
     overflow: hidden;
+}
+
+.main-nav-for-mobile {
+    display: none;
 }
