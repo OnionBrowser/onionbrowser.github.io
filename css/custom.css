@@ -354,7 +354,7 @@ a:hover {
 
 .footer-nav ul li a {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
     color: #632F7B;
 }
 
@@ -380,7 +380,7 @@ a:hover {
 .dev-inner,
 .bottom .power-inner,
 .ft-inner {
-    max-width: 69%;
+    max-width: 85%;
     margin: 0 auto;
 }
 
@@ -430,7 +430,7 @@ a:hover {
 
 a {
     color: #720E95;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .tor-items {
@@ -604,4 +604,79 @@ a {
 .lang .btn-group.dropup .btn.btn-secondary.dropdown-toggle:focus {
     border: 1px solid #fff;
     box-shadow: 0 0 0 0 rgba(108, 117, 125, .5);
+}
+
+.site-wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.disclaimer-inner h1.page-header {
+    font-size: 70px;
+}
+
+.don-items .don-item .don-detail {
+    width: 88%;
+}
+
+.donate-form #submit {
+    float: left;
+    width: 37%;
+    margin-top: -8px;
+}
+
+.donate-form select {
+    float: left;
+    width: 60%;
+    margin-right: 3%;
+}
+
+.donate-form {
+    overflow: hidden;
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+
+.sidr {
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999999;
+    width: 260px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 15px;
+    background: #7ED321;
+    color: #fff;
+    box-shadow: 0 0 0px 0px #222 inset;
+}
+
+.sidr ul li:hover > a,
+.sidr ul li:hover > span,
+.sidr ul li.active > a,
+.sidr ul li.active > span,
+.sidr ul li.sidr-class-active > a,
+.sidr ul li.sidr-class-active > span {
+    box-shadow: 0 0 0px 0px #222 inset;
+    border: 0px solid;
+}
+
+.sidr ul {
+    border-top: 0px solid #1a1a1a;
+    border-bottom: 0px solid #4d4d4d;
+}
+
+.sidr ul li {
+    border-top: 0px solid #4d4d4d;
+    border-bottom: 0px solid #1a1a1a;
+}
+
+.donate-form #submit {
+    background-repeat: no-repeat;
+}
+
+.banner-area {
+    overflow: hidden;
 }
