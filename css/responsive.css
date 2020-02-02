@@ -651,6 +651,10 @@
         font-family: fontAwesome;
         content: "\f0ac";
     }
+
+    .header-area.about-header #responsive-menu-button {
+        color: #fff;
+    }
 }
 
 
