@@ -655,6 +655,10 @@
     .header-area.about-header #responsive-menu-button {
         color: #fff;
     }
+
+    .donate-form .dropdown.bootstrap-select {
+        width: 100% !important;
+    }
 }
 
 
@@ -675,6 +679,10 @@
 
     .banner-area {
         height: 315px;
+    }
+
+    .donate-form #submit {
+        height: 108px;
     }
 
 

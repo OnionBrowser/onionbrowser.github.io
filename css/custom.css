@@ -641,7 +641,7 @@ a {
 }
 
 .donate-form {
-    overflow: hidden;
+    width: 100%;
     max-width: 600px;
     margin: 0 auto 25px;
 }
@@ -661,6 +661,27 @@ a {
     color: #fff;
     box-shadow: 0 0 0px 0px #222 inset;
 }
+
+.header-area .main-nav-for-mobile {
+    display: block;
+    position: fixed;
+    right: -50%;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    background: #7ED321;
+    z-index: 9;
+    transition: .4s;
+}
+
+#sidr.main-nav-for-mobile.appear {
+    right: 0;
+}
+
+#responsive-menu-button {
+    cursor: pointer;
+}
+
 
 .sidr ul li:hover > a,
 .sidr ul li:hover > span,
@@ -692,4 +713,114 @@ a {
 
 .main-nav-for-mobile {
     display: none;
+}
+
+#close-button {
+    color: #fff;
+    font-weight: 300;
+}
+
+#close-button {
+    color: #fff;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+#sidr {
+    padding: 35px 30px;
+}
+
+#close-button {
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    float: right;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 35px;
+    margin-right: 22px;
+}
+
+#sidr ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    clear: both;
+}
+
+#sidr ul li {
+    display: block;
+    margin-bottom: 25px;
+}
+
+#sidr ul li a {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+}
+
+#sidr .lang ul li a {
+    font-size: 14px;
+    text-align: left;
+    margin-top: 30px;
+    display: block;
+    font-weight: 300;
+}
+
+#sidr ul li.for-desktop {
+    display: none;
+}
+
+.donate-form .dropdown.bootstrap-select {
+    float: left;
+    width: 60%;
+    margin-right: 3%;
+}
+
+.tor-header p {
+    clear: both;
+    padding-top: 20px;
+}
+
+.donate-form .btn.dropdown-toggle.btn-light {
+    height: 100%;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    padding: 17px 26px;
+}
+
+.donate-form .dropdown.bootstrap-select {
+    float: left;
+    width: 60% !important;
+    margin-right: 3%;
+    height: 59px !important;
+    background: transparent !important;
+}
+
+.dropdown-menu.show {
+    min-width: 100% !important;
+}
+
+.dropdown-item.active .text,
+.dropdown-item:active .text {
+    color: #fff;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #fff !important;
+    text-decoration: none;
+    background-color: #720E95;
+}
+
+.donate-form .btn-light:hover {
+    color: #212529;
+    background-color: transparent;
+    border-color: #dae0e5;
+}
+
+.donate-form .btn-light {
+    color: #212529;
+    background-color: transparent;
+    border-color: #f8f9fa;
 }
