@@ -1,0 +1,13 @@
+title: Onion Browser
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+
+sass:
+ sass_dir: _scss
+ style: compressed
+
+exclude:
+  - README.md
