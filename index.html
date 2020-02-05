@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% assign home_data = site.data.home %}
+
 <section class="banner-area">
     <div class="container">
         <div class="row">
@@ -10,14 +12,14 @@ layout: default
                     <div class="row">
                         <div class="col-lg-8 col-md-8 col-8">
                             <div class="banner-left">
-                                <h6>Onion Browser</h6>
-                                <h1>Free to be you.</h1>
-                                <a href="https://apps.apple.com/in/app/apple-store/id375380948" target="_blank"><img src="{{ site.baseurl }}/assets/img/app-store.png" alt="app-store-logo"></a>
+                                <h6>{{ home_data.banner_area.subtitle }}</h6>
+                                <h1>{{ home_data.banner_area.title }}</h1>
+                                <a href="{{ home_data.banner_area.app_store_url }}" target="_blank"><img src="{{ site.baseurl }}{{ home_data.banner_area.app_store_button }}" alt="app-store-button"></a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-4">
                             <div class="banner-right">
-                                <img src="{{ site.baseurl }}/assets/img/LandingPage.png" alt="landing-page-image">
+                                <img src="{{ site.baseurl }}{{ home_data.banner_area.image }}" alt="landing-page-image">
                             </div>
                         </div>
                     </div>
@@ -33,33 +35,17 @@ layout: default
             <div class="col-md-12 col-lg-12">
                 <div class="promo-inner">
                     <div class="row">
+                        {% for item in home_data.promo_area.promo_area_items %}
                         <div class="col-lg-4 col-md-4">
                             <div class="promo">
                                 <div class="thumb">
-                                    <img src="{{ site.baseurl }}/assets/img/Browsing.png" alt="Browsing-icon">
+                                    <img src="{{ site.baseurl }}{{ item.image }}" alt="{{ item.alt }}">
                                 </div>
-                                <h3>Browsing is always private.</h3>
-                                <p>Encrypted traffic through the Tor network gives you the highest standard of security and privacy.</p>
+                                <h3>{{ item.title }}</h3>
+                                <p>{{ item.text }}</p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-4">
-                            <div class="promo">
-                                <div class="thumb">
-                                    <img src="{{ site.baseurl }}/assets/img/NoExtras.png" alt="NoExtras-icon">
-                                </div>
-                                <h3>No extras.</h3>
-                                <p>No extra eyes see your activity, save your history or influence your browsing. Targeted ads are history.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4">
-                            <div class="promo">
-                                <div class="thumb">
-                                    <img src="{{ site.baseurl }}/assets/img/TossHistory.png" alt="TossHistory-icon">
-                                </div>
-                                <h3>Toss your history.</h3>
-                                <p>Tabs don’t hang around. They close when you’re done, so every search is new. </p>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
@@ -73,14 +59,14 @@ layout: default
             <div class="col-md-12 col-lg-12">
                 <div class="power-inner">
                     <div class="power-thumb">
-                        <img src="{{ site.baseurl }}/assets/img/Tor.png" alt="tor-logo">
+                        <img src="{{ site.baseurl }}{{ home_data.power_area.tor_image }}" alt="tor-logo">
                     </div>
                     <div class="power-detail">
-                        <h4>Powered by Tor</h4>
-                        <p>Onion Browser is your trusted connection to Tor on iOS.</p>
+                        <h4>{{ home_data.power_area.title }}</h4>
+                        <p>{{ home_data.power_area.text }}</p>
                     </div>
                     <div class="power-link">
-                        <a href="">Learn more ></a>
+                        <a href="{{ home_data.power_area.link_url }}">{{ home_data.power_area.link_text }}</a>
                     </div>
                 </div>
             </div>
@@ -93,33 +79,17 @@ layout: default
         <div class="row">
             <div class="col-md-12 col-lg-12">
                 <div class="detail-inner">
+                    {% for item in home_data.detail_area.detail_area_items %}
                     <div class="detail-item">
                         <div class="d-thumb">
-                            <img src="{{ site.baseurl }}/assets/img/HighestStandard.png" alt="HighestStandard-image">
+                            <img src="{{ site.baseurl }}{{ item.image }}" alt="{{ item.alt }}">
                         </div>
                         <div class="d-desc">
-                            <h4>The highest <br>standard of privacy.</h4>
-                            <p>Tor offers the highest standard of privacy. You are not linked to your browsing activity. Your location doesn't influence the websites you’re able to visit. Targeted ads are history.</p>
+                            <h4>{{ item.title }}</h4>
+                            <p>{{ item.text }}</p>
                         </div>
                     </div>
-                    <div class="detail-item">
-                        <div class="d-thumb">
-                            <img src="{{ site.baseurl }}/assets/img/SuperFast.png" alt="SuperFast-image">
-                        </div>
-                        <div class="d-desc">
-                            <h4>Super fast, super secure access to popular sites.</h4>
-                            <p>Onion sites are simplified versions of websites that can only be accessed by Tor. They are a sure safe way to connect.</p>
-                        </div>
-                    </div>
-                    <div class="detail-item">
-                        <div class="d-thumb">
-                            <img src="{{ site.baseurl }}/assets/img/HighestStandard.png" alt="HighestStandard-image">
-                        </div>
-                        <div class="d-desc">
-                            <h4>Security that works.</h4>
-                            <p>You can adjust your security for each website you visit to get the best experience.</p>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -132,47 +102,17 @@ layout: default
             <div class="row">
                 <div class="col-lg-12 col-md-12">
                     <div class="featured-inner">
-                        <h4>Featured in</h4>
+                        <h4>{{ home_data.featured_area.title }}</h4>
                         <div class="featured-items">
+                            {% for item in home_data.featured_area.featured_area_items %}
                             <div class="item">
-                                <a href="#" target="_blank">
-                                    <img src="{{ site.baseurl }}/assets/img/NewYorkTimes.png" alt="NewYorkTimes-logo">
+                                <a href="{{ item.url }}" target="_blank">
+                                    <img src="{{ site.baseurl }}{{ item.image }}" alt="{{ item.alt }}">
                                 </a>
                             </div>
+                            {% endfor %}
                             <div class="item">
-                                <a href="#" target="_blank">
-                                    <img src="{{ site.baseurl }}/assets/img/TheGuardian.png" alt="TheGuardian-logo">
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#" target="_blank">
-                                    <img src="{{ site.baseurl }}/assets/img/MacWorld.png" alt="MacWorld-logo">
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#" target="_blank">
-                                    <img src="{{ site.baseurl }}/assets/img/TechCrunch.png" alt="TechCrunch-logo">
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#" target="_blank">
-                                    <img src="{{ site.baseurl }}/assets/img/BoingBoing.png" alt="BoingBoing-logo">
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#" target="_blank">
-                                    <img src="{{ site.baseurl }}/assets/img/LifeHacker.png" alt="LifeHacker-logo">
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#" target="_blank">
-                                    <img src="{{ site.baseurl }}/assets/img/Gizmodo.png" alt="Gizmodo-logo">
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#" target="_blank">
-                                    +more
-                                </a>
+                                <a href="{{ home_data.featured_area.button_url }}" target="_blank">{{ home_data.featured_area.button_text }}</a>
                             </div>
                         </div>
                     </div>
@@ -185,8 +125,8 @@ layout: default
             <div class="row">
                 <div class="col-md-12 col-lg-12">
                     <div class="special-inner text-center">
-                        <h2>“Onion Browser takes the cake!”</h2>
-                        <p class="mb-0">App store review - Jan 15, 2019</p>
+                        <h2>{{ home_data.special_area.title }}</h2>
+                        <p class="mb-0">{{ home_data.special_area.text }}</p>
                     </div>
                 </div>
             </div>
@@ -199,32 +139,14 @@ layout: default
         <div class="row">
             <div class="col-md-12 col-lg-12">
                 <div class="dev-inner">
-                    <h2>About the developers.</h2>
-                    <p>Onion Browser is free and open source. Anyone may help contribute, audit or inspect the code. Main contributing programmers include, <a href="https://mike.tig.as/">Mike Tigas</a>, <a href="https://die.netzarchitekten.com/">Benjamin Erhart</a> and <a href="https://guardianproject.info/">Guardian Project</a>.</p>
+                    <h2>{{ home_data.dev_area.title }}</h2>
+                    <p>{{ home_data.dev_area.text }}</p>
                     <!-- Place this tag where you want the button to render. -->
-                    <a class="github-button" href="https://github.com/OnionBrowser" data-size="large" aria-label="Follow @OnionBrowser on GitHub">Follow @OnionBrowser</a>
+                    <a class="github-button" href="{{ home_data.dev_area.github_url }}" data-size="large" aria-label="{{ home_data.dev_area.github_url }}">{{ home_data.dev_area.github_text }}</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="power-area bottom">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-lg-12">
-                <div class="power-inner">
-                    <div class="power-detail">
-                        <h2>Free and open.</h2>
-                        <p>Onion Browser is a free app! Support the continued development of the app. Share the love.</p>
-                    </div>
-                    <div class="power-link">
-                        <div class="donate">
-                            <a href="{{ site.baseurl }}/donate" class="oni-btn">Donate</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+{% include general/bottom_donate_area.html %}
