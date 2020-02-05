@@ -3,16 +3,17 @@ layout: default
 permalink: /privacy-policy
 ---
 
+{% assign privacy_data = site.data.privacy %}
+
 <div class="disclaimer-area section-padding">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-lg-12">
                 <div class="disclaimer-inner">
-                    <h1 class="page-header">Privacy Policy</h1>
-                    <p>Onion Browser does not directly collect any data on user activity. Other than what is built into iOS, Onion Browser does not utilize any third party analytics.</p>
-                    <p>Information on iOS data collection (App Store account info, opt-in analytics, etc), and its privacy policy (and full legal compliance information), can be found here: <a href="">https://www.apple.com/legal/privacy/en-ww/</a></p>
-                    <p>In particular, analytics data collection is opt-in (Settings->Privacy->Analytics in iOS) and is aggregated and anonymized using differential privacy techniques to make it difficult or impossible to extract an individual user’s information from the aggregated data. <a href="">https://images.apple.com/privacy/docs/Differential_Privacy_Overview.pdf</a></p>
-                    <p>Apple only makes this data available in aggregate and the Onion Browser developers do not have access to an individual user’s information. For examples of the aggregate data made available, see: <a href="">https://developer.apple.com/app-store/app-analytics/</a></p>
+                    <h1 class="page-header">{{ privacy_data.title }}</h1>
+                    {% for item in privacy_data.privacy_items %}
+                    <p>{{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                    {% endfor %}
                 </div>
             </div>
         </div>

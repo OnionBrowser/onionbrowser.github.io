@@ -3,65 +3,44 @@ layout: default
 permalink: /donate
 ---
 
+{% assign donate_data = site.data.donate %}
+
 <div class="tor-area section-padding">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-lg-12">
                 <div class="tor-inner donate">
                     <div class="tor-header text-center">
-                        <h1>Support Onion Browser</h1>
+                        <h1>{{ donate_data.title }}</h1>
                         <div class="donate-form">
                             <form action="">
                                 <select name="donate" class="selectpicker">
-                                    <option value="10">Send $10.00 USD</option>
-                                    <option value="10">Send $20.00 USD</option>
-                                    <option value="10">Send $30.00 USD</option>
-                                    <option value="10">Send $40.00 USD</option>
-                                    <option value="10">Send $50.00 USD</option>
+                                    {% for select in donate_data.donate_form %}
+                                    <option value="{{ select.value }}">{{ select.text }}</option>
+                                    {% endfor %}
                                 </select>
                                 <input id="submit" type="submit" value="" name="submit">
                             </form>
                         </div>
-                        <p>You may also make a one-time donation through the app. Go to "Help Fund Onion Browser" in the main menu.</p>
+                        <p>{{ donate_data.description }}</p>
                     </div>
                     <div class="don-items">
-                        <h4>More ways to donate</h4>
+                        <h4>{{ donate_data.subtitle }}</h4>
+                        {% for item in donate_data.donate_partners %}
                         <div class="don-item">
                             <div class="don-thumb">
-                                <img src="{{ site.baseurl }}/assets/img/Bitcoin.png" alt="Bitcoin-logo">
+                                <img src="{{ site.baseurl }}{{ item.image }}" alt="{{ item.alt }}">
                             </div>
                             <div class="don-detail">
-                                <h5>BitCoin</h5>
-                                <p>15KxYFRuwWUTXzWjPvJEDrDCZuf76LjrgR</p>
+                                <h5>{{ item.name }}</h5>
+                                {% if item.text %}
+                                <p>{{ item.text }} <a href="{{ item.url }}" target="_blank">{{ item.url | remove: "https://" }}</a></p>
+                                {% else %}
+                                <p>{{ item.url }}</p>
+                                {% endif %}
                             </div>
                         </div>
-                        <div class="don-item">
-                            <div class="don-thumb">
-                                <img src="{{ site.baseurl }}/assets/img/ZCASH.png" alt="ZCash-logo">
-                            </div>
-                            <div class="don-detail">
-                                <h5>ZCash</h5>
-                                <p>zs1hv9ux5erpemkcv3rq5e38m5ehhs3jrm7k07a2pkvckynej9hmwg8n 0wd6ef7fq2ymar5jjdp924</p>
-                            </div>
-                        </div>
-                        <div class="don-item">
-                            <div class="don-thumb">
-                                <img src="{{ site.baseurl }}/assets/img/Patreon.png" alt="Patreon-logo">
-                            </div>
-                            <div class="don-detail">
-                                <h5>patreon</h5>
-                                <p>Back us on <a href="">patreon.com/OnionBrowser</a>.</p>
-                            </div>
-                        </div>
-                        <div class="don-item">
-                            <div class="don-thumb">
-                                <img src="{{ site.baseurl }}/assets/img/Bitpatron.png" alt="Bitpatron-logo">
-                            </div>
-                            <div class="don-detail">
-                                <h5>BitPatron</h5>
-                                <p>Back us on <a href="">bitpatron.co/miketigas.id.blockstack</a>.</p>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>

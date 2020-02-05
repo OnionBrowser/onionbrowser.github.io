@@ -3,13 +3,15 @@ layout: default
 permalink: /about
 ---
 
+{% assign about_data = site.data.about %}
+
 <div class="special-area about-conn">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-lg-12">
                 <div class="special-inner text-center">
-                    <p>Onion Browser</p>
-                    <h2>Your trusted connection to Tor on iOS.</h2>
+                    <p>{{ about_data.special_area.title }}</p>
+                    <h2>{{ about_data.special_area.subtitle }}</h2>
                 </div>
             </div>
         </div>
@@ -22,58 +24,22 @@ permalink: /about
             <div class="col-md-12 col-lg-12">
                 <div class="tor-inner">
                     <div class="tor-header text-center">
-                        <img src="{{ site.baseurl }}/assets/img/Tor.png" alt="tor-logo">
-                        <p>Tor is powered by a diverse network of people. No single company or person has access to your browsing activity when you use Tor.</p>
-                        <span>Learn about Tor at. <a href="#">torproject.org</a></span>
+                        <img src="{{ site.baseurl }}{{ about_data.tor_area.image }}" alt="tor-logo">
+                        <p>{{ about_data.tor_area.description }}</p>
+                        <span>{{ about_data.tor_area.text }} <a href="{{ about_data.tor_area.url }}" target="_blank">{{ about_data.tor_area.url | remove: "https://" }}</a></span>
                     </div>
                     <div class="tor-items">
+                        {% for item in about_data.tor_area.tor_items %}
                         <div class="tor-item">
                             <div class="ti-thumb">
-                                <img src="{{ site.baseurl }}/assets/img/EncryptedTraffic.png" alt="EncryptedTraffic-icon">
-                            </div>
-
-                            <div class="ti-detail">
-                                <h4>Encrypted traffic.</h4>
-                                <p>Your internet traffic is encrypted then bounced through three different parts of the world before reaching its destination.</p>
-                            </div>
-                        </div>
-                        <div class="tor-item">
-                            <div class="ti-thumb">
-                                <img src="{{ site.baseurl }}/assets/img/OnlinePrivacy.png" alt="OnlinePrivacy-icon">
-                            </div>
-
-                            <div class="ti-detail">
-                                <h4>Online privacy.</h4>
-                                <p>Websites don’t know who you are. Your real IP address is not revealed. </p>
-                            </div>
-                        </div>
-                        <div class="tor-item">
-                            <div class="ti-thumb">
-                                <img src="{{ site.baseurl }}/assets/img/NoCensorship.png" alt="NoCensorship-icon">
+                                <img src="{{ site.baseurl }}{{ item.image }}" alt="{{ item.alt }}">
                             </div>
                             <div class="ti-detail">
-                                <h4>No censorship.</h4>
-                                <p>Gain access to websites and content, regardless of your geography or network restrictions.</p>
+                                <h4>{{ item.title }}</h4>
+                                <p>{{ item.text }}</p>
                             </div>
                         </div>
-                        <div class="tor-item">
-                            <div class="ti-thumb">
-                                <img src="{{ site.baseurl }}/assets/img/NoSurveillance.png" alt="NoSurveillance-icon">
-                            </div>
-                            <div class="ti-detail">
-                                <h4>No surviellance.</h4>
-                                <p>Internet service providers (ISP) and wifi network operators cannot see your browsing.</p>
-                            </div>
-                        </div>
-                        <div class="tor-item">
-                            <div class="ti-thumb">
-                                <img src="{{ site.baseurl }}/assets/img/NoTracking.png" alt="NoTracking-icon">
-                            </div>
-                            <div class="ti-detail">
-                                <h4>No tracking.</h4>
-                                <p>You’re in control. Disable third parties from tracking you.</p>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
@@ -86,7 +52,7 @@ permalink: /about
         <div class="row">
             <div class="col-md-12 col-lg-12">
                 <div class="conneted-inner">
-                    <img src="{{ site.baseurl }}/assets/img/AboutScreens.png" alt="screenshots-image">
+                    <img src="{{ site.baseurl }}{{ about_data.conneted_area.image }}" alt="screenshots-image">
                 </div>
             </div>
         </div>
@@ -98,17 +64,12 @@ permalink: /about
         <div class="row">
             <div class="col-md-12 col-lg-12">
                 <div class="disclaimer-inner">
-                    <h4>Disclaimer</h4>
-                    <p>Using Onion Browser does not guarantee security or privacy on its own. It simply provides a set of features that may enhance privacy and anonymity while browsing the web. Please remember the following.</p>
-                    <p>Onion Browser only tunnels traffic within the Onion Browser app. You are still using a smartphone you should be aware that information outside of Onion Browser will continue to use your normal connection.</p>
-                    <p>If you log into websites in Onion Browser that you normally log into outside of the Tor network, they will still know who you are and know that you use Tor. In certain circumstances (i.e. political dissent in repressive nations), this may be incriminating information in itself.</p>
-                    <h4>Limitations in iOS</h4>
-                    <p><a href="https://github.com/OnionBrowser/OnionBrowser/wiki/Traffic-that-leaks-outside-of-Tor-due-to-iOS-limitations">iOS has full control over some network traffic</a>, which may result in this traffic (including audio or video embeds) routing via your normal connection and not over Tor.</p>
-                    <h4>Geolocation and Advanced HTML5 Features</h4>
-                    <p>Websites may use the HTML5 Geolocation API (to view your current GPS location) and other new HTML5 features unless "Strict" security mode is set. Users should also remain vigilant for any pop-ups asking for permission to access location data.</p>
-                    <h4>More Information</h4>
-                    <p>The Tor Project <a href="https://2019.www.torproject.org/about/overview.html.en#stayinganonymous">maintains a small page of tips</a> about staying anonymous while using Tor.</p>
-                    <p>A log of Onion Browser <a href="https://github.com/OnionBrowser/OnionBrowser/blob/2.X/CHANGELOG.md">release notes</a>, including previous security issues and results of previous security audits <a href="https://github.com/OnionBrowser/OnionBrowser/blob/2.X/CHANGELOG.md">is available here</a>. You can also see the Github project for a <a href="https://github.com/OnionBrowser/OnionBrowser/issues">current list of known issues.</a></p>
+                    {% for item in about_data.disclaimer_area.disclaimer_items %}
+                    <h4>{{ item.title }}</h4>
+                    {% for text in item.text_nodes %}
+                    <p>{{ text.node }}</p>
+                    {% endfor %}
+                    {% endfor %}
                 </div>
             </div>
         </div>

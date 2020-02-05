@@ -790,6 +790,11 @@ a {
     padding: 17px 26px;
 }
 
+.donate-form .btn.dropdown-toggle.btn-light:focus,
+.donate-form #submit:focus {
+    outline: none !important;
+}
+
 .donate-form .dropdown.bootstrap-select {
     float: left;
     width: 60% !important;
