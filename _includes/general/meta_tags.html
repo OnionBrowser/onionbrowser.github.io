@@ -1,14 +1,16 @@
-<meta name="generator" content="Jekyll v{{ jekyll.version }}" />
-<meta property="og:title" content="{{ page.title }}" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="{{ page.description }}" />
-<meta property="og:description" content="{{ page.description }}" />
+<meta name="title" content="{{ page.title }}" />
+<meta name="description" content="{{ page.description }}">
 <link rel="canonical" href="https://onion-preview.netlify.com{{ page.url }}" />
-<meta property="og:url" content="https://onion-preview.netlify.com{{ page.url }}" />
+<meta name="generator" content="Jekyll v{{ jekyll.version }}" />
 <meta property="og:site_name" content="Onion Browser" />
-<meta name="twitter:card" content="{{ site.twitter.card }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://onion-preview.netlify.com{{ page.url }}">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:image" content="https://onion-preview.netlify.com{{ site.main_logo }}" />
+<meta property="twitter:card" content="{{ site.twitter.card }}" />
 <meta name="twitter:site" content="{{ site.twitter.username }}" />
-{% if page.image %}
-<meta property="og:image" content="{{ page.image }}" />
-<meta name="twitter:image" content="{{ page.image }}" />
-{% endif %}
+<meta property="twitter:url" content="https://onion-preview.netlify.com{{ page.url }}">
+<meta property="twitter:title" content="{{ page.title }}">
+<meta property="twitter:description" content="{{ page.description }}">
+<meta name="twitter:image" content="https://onion-preview.netlify.com{{ site.main_logo }}" />
