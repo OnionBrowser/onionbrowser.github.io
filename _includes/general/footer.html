@@ -2,32 +2,7 @@
     <div class="footer-top">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-lg-12">
-                    <div class="ft-inner">
-                        <div class="row">
-                            <div class="col-lg-2 col-md-2">
-                                <div class="footer-logo">
-                                    <a href="{{ site.baseurl }}/index">
-                                        <img src="{{ site.baseurl }}/assets/img/logo-svg.svg" alt="onion-logo">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-10 col-md-10">
-                                <div class="footer-nav">
-                                    <ul>
-                                        <li><a href="{{ site.baseurl }}/about">About</a></li>
-                                        <li><a href="{{ site.baseurl }}/privacy-policy">Privacy</a></li>
-                                        <li><a href="{{ site.baseurl }}/legal">Legal</a></li>
-                                        <li class="for-desktop"><a href="https://apps.apple.com/in/app/apple-store/id375380948" target="_blank">Download</a></li>
-                                        <li class="for-small-devices"><a href="https://apps.apple.com/in/app/apple-store/id375380948">Download</a></li>
-                                        <li><a href="{{ site.baseurl }}/faqs">Faqs</a></li>
-                                        <li class="donate"><a href="{{ site.baseurl }}/donate">Donate</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {% include general/footer_navigation.html %}
             </div>
         </div>
     </div>

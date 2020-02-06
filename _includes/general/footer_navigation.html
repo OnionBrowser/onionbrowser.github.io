@@ -1,0 +1,37 @@
+<div class="col-md-12 col-lg-12">
+    <div class="ft-inner">
+        <div class="row">
+            <div class="col-lg-2 col-md-2">
+                <div class="footer-logo">
+                    <a href="{{ site.baseurl }}/index">
+                        <img src="{{ site.baseurl }}{{ site.main_logo }}" alt="onion-logo">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-10 col-md-10">
+                <div class="footer-nav">
+                    <ul>
+                        {% for link in links %}
+                        {% assign class = nil %}
+                        {% if link.title contains 'Donate' %}
+                        {% assign class = 'donate' %}
+                        {% endif %}
+                        {% if link.external %}
+                        <li class="for-desktop">
+                            <a href="{{ site.baseurl }}{{ link.url }}" target="_blank">{{ link.title }}</a>
+                        </li>
+                        <li class="for-small-devices">
+                            <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                        </li>
+                        {% else %}
+                        <li {% if class %}class="{{ class }}"{% endif %}>
+                            <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

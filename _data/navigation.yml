@@ -1,0 +1,14 @@
+navigation_links:
+  - title: About
+    url: /about
+  - title: Privacy
+    url: /privacy-policy
+  - title: Legal
+    url: /legal
+  - title: Download
+    url: https://apps.apple.com/in/app/apple-store/id375380948
+    external: true
+  - title: Faqs
+    url: /faqs
+  - title: Donate
+    url: /donate
