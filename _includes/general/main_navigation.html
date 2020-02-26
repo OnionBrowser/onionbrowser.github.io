@@ -1,0 +1,74 @@
+{% assign links = site.data.navigation.navigation_links %}
+
+<header class="header-area {% if page.url contains 'about' %}about-header{% endif %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <div class="header-inner">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 col-8">
+                            <div class="logo">
+                                <a href="{{ site.baseurl }}/index">
+                                    <img src="{{ site.baseurl }}{{ site.main_logo }}" alt="onion-logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-4">
+                            <div id="mobile-header">
+                                <a id="responsive-menu-button"><i class="fa fa-bars"></i></a>
+                            </div>
+                            <div class="main-nav">
+                                <ul>
+                                    {% comment %} Loop 'limit:5' can be replaced with 'forloop.last == true & break' {% endcomment %}
+
+                                    {% for link in links limit:5 %}
+                                    {% assign class = nil %}
+                                    {% if page.url contains link.url %}
+                                    {% assign class = 'active' %}
+                                    {% endif %}
+                                    {% if link.external %}
+                                    <li class="for-desktop">
+                                        <a href="{{ site.baseurl }}{{ link.url }}" target="_blank">{{ link.title }}</a>
+                                    </li>
+                                    <li class="for-small-devices">
+                                        <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                                    </li>
+                                    {% else %}
+                                    <li {% if class %}class="{{ class }}"{% endif %}>
+                                        <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                                    </li>
+                                    {% endif %}
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2">
+                            <div class="donate">
+                                <a href="{{ site.baseurl }}/donate" class="oni-btn">Donate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="sidr" class="main-nav-for-mobile">
+        <a id="close-button">X</a>
+        <ul>
+            <li><a href="{{ site.baseurl }}/index">Home</a></li>
+            <li><a href="{{ site.baseurl }}/about">About</a></li>
+            <li><a href="{{ site.baseurl }}/privacy-policy">Privacy</a></li>
+            <li><a href="{{ site.baseurl }}/legal">Legal</a></li>
+            <li class="for-desktop"><a href="https://apps.apple.com/in/app/apple-store/id375380948" target="_blank">Download</a></li>
+            <li class="for-small-devices"><a href="https://apps.apple.com/in/app/apple-store/id375380948">Download</a></li>
+            <li><a href="{{ site.baseurl }}/faqs">FAQs</a></li>
+            <li><a href="{{ site.baseurl }}/donate">Donate</a></li>
+        </ul>
+        <div class="lang">
+            <ul>
+                <li><a href="#"><i class="fa fa-globe"></i> Language</a></li>
+            </ul>
+        </div>
+    </div>
+</header>

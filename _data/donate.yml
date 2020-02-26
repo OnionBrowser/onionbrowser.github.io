@@ -1,0 +1,40 @@
+title: Support Onion Browser
+description: You may also make a one-time donation through the app. Go to "Help Fund Onion Browser" in the main menu.
+subtitle: More ways to donate
+
+
+donate_form:
+  - text: Send $10.00 USD
+    value: 10
+  - text: Send $20.00 USD
+    value: 20
+  - text: Send $30.00 USD
+    value: 30
+  - text: Send $40.00 USD
+    value: 40
+  - text: Send $50.00 USD
+    value: 50
+
+
+donate_partners:
+  - name: BitCoin
+    url: 15KxYFRuwWUTXzWjPvJEDrDCZuf76LjrgR
+    image: /assets/img/Bitcoin.png
+    alt: Bitcoin-logo
+
+  - name: ZCash
+    url: zs1hv9ux5erpemkcv3rq5e38m5ehhs3jrm7k07a2pkvckynej9hmwg8n 0wd6ef7fq2ymar5jjdp924
+    image: /assets/img/ZCASH.png
+    alt: ZCash-logo
+
+  - name: Patreon
+    url: https://patreon.com/OnionBrowser
+    image: /assets/img/Patreon.png
+    alt: Patreon-logo
+    text: Back us on
+
+  - name: BitPatron
+    url: https://bitpatron.co/miketigas.id.blockstack
+    image: /assets/img/Bitpatron.png
+    alt: BitPatron-logo
+    text: Back us on

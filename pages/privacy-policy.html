@@ -1,0 +1,23 @@
+---
+layout: default
+permalink: /privacy-policy
+title: Onion Browser | Privacy Policy
+description: Onion Browser - Privacy Policy page.
+---
+
+{% assign privacy_data = site.data.privacy %}
+
+<div class="disclaimer-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <div class="disclaimer-inner">
+                    <h1 class="page-header">{{ privacy_data.title }}</h1>
+                    {% for item in privacy_data.privacy_items %}
+                    <p>{{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

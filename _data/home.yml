@@ -1,0 +1,98 @@
+banner_area:
+  subtitle: Onion Browser
+  title: Free to be you.
+  app_store_url: https://apps.apple.com/in/app/apple-store/id375380948
+  app_store_button: /assets/img/app-store.png
+  image: /assets/img/LandingPage.png
+
+
+promo_area:
+  promo_area_items:
+    - title: Browsing is always private.
+      text: Encrypted traffic through the Tor network gives you the highest standard of security and privacy.
+      image: /assets/img/Browsing.png
+      alt: Browsing-icon
+
+    - title: No extras.
+      text: No extra eyes see your activity, save your history or influence your browsing. Targeted ads are history.
+      image: /assets/img/NoExtras.png
+      alt: NoExtras-icon
+
+    - title: Toss your history.
+      text: Tabs don’t hang around. They close when you’re done, so every search is new.
+      image: /assets/img/TossHistory.png
+      alt: TossHistory-icon
+
+
+power_area:
+  title: Powered by Tor
+  text: Onion Browser is your trusted connection to Tor on iOS.
+  tor_image: /assets/img/Tor.png
+  link_text: Learn more >
+  link_url: "#"
+
+
+detail_area:
+  detail_area_items:
+    - title: The highest <br />standard of privacy.
+      text: Tor offers the highest standard of privacy. You are not linked to your browsing activity. Your location doesn't influence the websites you’re able to visit. Targeted ads are history.
+      image: /assets/img/HighestStandard.png
+      alt: HighestStandard-image
+
+    - title: Super fast, super secure access to popular sites.
+      text: Onion sites are simplified versions of websites that can only be accessed by Tor. They are a sure safe way to connect.
+      image: /assets/img/SuperFast.png
+      alt: SuperFast-image
+
+    - title: Security that works.
+      text: You can adjust your security for each website you visit to get the best experience.
+      image: /assets/img/HighestStandard.png
+      alt: HighestStandard-image
+
+
+featured_area:
+  title: Featured in
+  featured_area_items:
+    - image: /assets/img/NewYorkTimes.png
+      alt: NewYorkTimes-logo
+      url: "#"
+
+    - image: /assets/img/TheGuardian.png
+      alt: TheGuardian-logo
+      url: "#"
+
+    - image: /assets/img/MacWorld.png
+      alt: MacWorld-logo
+      url: "#"
+
+    - image: /assets/img/TechCrunch.png
+      alt: TechCrunch-logo
+      url: "#"
+
+    - image: /assets/img/BoingBoing.png
+      alt: BoingBoing-logo
+      url: "#"
+
+    - image: /assets/img/LifeHacker.png
+      alt: LifeHacker-logo
+      url: "#"
+
+    - image: /assets/img/Gizmodo.png
+      alt: Gizmodo-logo
+      url: "#"
+
+  button_text: +more
+  button_url: "#"
+
+
+special_area:
+  title: “Onion Browser takes the cake!”
+  text: App store review - Jan 15, 2019
+
+
+dev_area:
+  title: About the developers.
+  text: Onion Browser is free and open source. Anyone may help contribute, audit or inspect the code. Main contributing programmers include, <a href="https://mike.tig.as/">Mike Tigas</a>, <a href="https://die.netzarchitekten.com/">Benjamin Erhart</a> and <a href="https://guardianproject.info/">Guardian Project</a>.
+  github_url: https://github.com/OnionBrowser
+  github_label: Follow @OnionBrowser on GitHub
+  github_text: Follow @OnionBrowser

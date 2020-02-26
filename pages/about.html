@@ -1,0 +1,81 @@
+---
+layout: default
+permalink: /about
+title: Onion Browser | About
+description: Onion Browser - Your trusted connection to Tor on iOS.
+---
+
+{% assign about_data = site.data.about %}
+
+<div class="special-area about-conn">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <div class="special-inner text-center">
+                    <p>{{ about_data.special_area.title }}</p>
+                    <h2>{{ about_data.special_area.subtitle }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="tor-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <div class="tor-inner">
+                    <div class="tor-header text-center">
+                        <img src="{{ site.baseurl }}{{ about_data.tor_area.image }}" alt="tor-logo">
+                        <p>{{ about_data.tor_area.description }}</p>
+                        <span>{{ about_data.tor_area.text }} <a href="{{ about_data.tor_area.url }}" target="_blank">{{ about_data.tor_area.url | remove: "https://" }}</a></span>
+                    </div>
+                    <div class="tor-items">
+                        {% for item in about_data.tor_area.tor_items %}
+                        <div class="tor-item">
+                            <div class="ti-thumb">
+                                <img src="{{ site.baseurl }}{{ item.image }}" alt="{{ item.alt }}">
+                            </div>
+                            <div class="ti-detail">
+                                <h4>{{ item.title }}</h4>
+                                <p>{{ item.text }}</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="conneted-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <div class="conneted-inner">
+                    <img src="{{ site.baseurl }}{{ about_data.conneted_area.image }}" alt="screenshots-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="disclaimer-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <div class="disclaimer-inner">
+                    {% for item in about_data.disclaimer_area.disclaimer_items %}
+                    <h4>{{ item.title }}</h4>
+                    {% for text in item.text_nodes %}
+                    <p>{{ text.node }}</p>
+                    {% endfor %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include general/bottom_donate_area.html %}
