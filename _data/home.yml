@@ -8,7 +8,7 @@ banner_area:
 
 promo_area:
   promo_area_items:
-    - title: Browsing is always private.
+    - title: Browsing is private.
       text: Encrypted traffic through the Tor network gives you the highest standard of security and privacy.
       image: /assets/img/Browsing.png
       alt: Browsing-icon
@@ -35,7 +35,7 @@ power_area:
 detail_area:
   detail_area_items:
     - title: The highest <br />standard of privacy.
-      text: Tor offers the highest standard of privacy. You are not linked to your browsing activity. Your location doesn't influence the websites you’re able to visit. Targeted ads are history.
+      text: Tor offers the highest standard of privacy. You are not linked to your browsing activity. Your location doesn't influence the websites you’re able to visit.
       image: /assets/img/HighestStandard.png
       alt: HighestStandard-image
 
@@ -82,7 +82,6 @@ featured_area:
       url: "#"
 
   button_text: +more
-  button_url: "#"
 
 
 special_area:

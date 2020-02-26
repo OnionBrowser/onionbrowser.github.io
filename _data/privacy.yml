@@ -4,11 +4,11 @@ title: Privacy Policy
 privacy_items:
   - text: Onion Browser does not directly collect any data on user activity. Other than what is built into iOS, Onion Browser does not utilize any third party analytics.
 
-  - text: "Information on iOS data collection (App Store account info, opt-in analytics, etc), and its privacy policy (and full legal compliance information), can be found here: [https://www.apple.com/legal/privacy/en-ww/](https://www.apple.com/legal/privacy/en-ww/)"
+  - text: "Information on iOS data collection (App Store account info, opt-in analytics, etc), and its privacy policy (and full legal compliance information), can be found here: [https://www.apple.com/legal/privacy/en-ww/](https://www.apple.com/legal/privacy/en-ww/)".
 
-  - text: In particular, analytics data collection is opt-in (Settings->Privacy->Analytics in iOS) and is aggregated and anonymized using differential privacy techniques to make it difficult or impossible to extract an individual user’s information from the aggregated data. [https://images.apple.com/privacy/docs/Differential_Privacy_Overview.pdf](https://images.apple.com/privacy/docs/Differential_Privacy_Overview.pdf)
+  - text: In particular, analytics data collection is opt-in (Settings->Privacy->Analytics in iOS) and is aggregated and anonymized using differential privacy techniques to make it difficult or impossible to extract an individual user’s information from the aggregated data. [https://images.apple.com/privacy/docs/Differential_Privacy_Overview.pdf](https://images.apple.com/privacy/docs/Differential_Privacy_Overview.pdf).
 
-  - text: "Apple only makes this data available in aggregate and the Onion Browser developers do not have access to an individual user’s information. For examples of the aggregate data made available, see: [https://developer.apple.com/app-store/app-analytics/](https://developer.apple.com/app-store/app-analytics/)"
+  - text: "Apple only makes this data available in aggregate and the Onion Browser developers do not have access to an individual user’s information. For examples of the aggregate data made available, see: [https://developer.apple.com/app-store/app-analytics/](https://developer.apple.com/app-store/app-analytics/)".
 
 
 ##~~TIPS~~##
