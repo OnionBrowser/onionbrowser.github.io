@@ -2,6 +2,9 @@ title: FAQs
 
 
 faq_items:
+  - question: Where can I find information on the latest release, fixes and improvements?
+    answer: We post all releases and release notes on our open-source project page at [https://github.com/OnionBrowser/OnionBrowser/releases](https://github.com/OnionBrowser/OnionBrowser/releases)
+
   - question: What is Tor?
     answer: Tor is a network of relays run by volunteers all over the world that allow you to bounce your communications on them which allows you to hide the websites you visit from people watching your internet connection, it also prevents websites you visit from learning your physical location.
 
