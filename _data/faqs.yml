@@ -15,4 +15,4 @@ faq_items:
     answer: Bridges are Tor relays that help circumvent censorship. You can try bridges if Tor is blocked by your ISP.
 
   - question: What’s the difference between browsing with Tor on iOS and browsing with Tor on my computer?
-    answer: Nate to add info.
+    answer: The primary difference is that Apple requires we use the WebKit browser component they provie. With Tor Browser on Desktop and Android, the browser is built upon Mozilla's Firefox / Gecko component, which offers greater control and more reliability when it comes to implementing proxying and anti-tracking techniques.
