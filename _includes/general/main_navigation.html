@@ -28,10 +28,10 @@
                                     {% endif %}
                                     {% if link.external %}
                                     <li class="for-desktop">
-                                        <a href="{{ site.baseurl }}{{ link.url }}" target="_blank">{{ link.title }}</a>
+                                        <a href="{{ link.url }}" target="_blank">{{ link.title }}</a>
                                     </li>
                                     <li class="for-small-devices">
-                                        <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                                        <a href="{{ link.url }}">{{ link.title }}</a>
                                     </li>
                                     {% else %}
                                     <li {% if class %}class="{{ class }}"{% endif %}>
