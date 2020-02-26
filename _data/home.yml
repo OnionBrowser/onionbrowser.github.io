@@ -29,7 +29,7 @@ power_area:
   text: Onion Browser is your trusted connection to Tor on iOS.
   tor_image: /assets/img/Tor.png
   link_text: Learn more >
-  link_url: "#"
+  link_url: /about
 
 
 detail_area:
