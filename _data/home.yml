@@ -89,7 +89,7 @@ special_area:
 
 dev_area:
   title: About the developers.
-  text: Onion Browser is free and open source. Anyone may help contribute, audit or inspect the code. Main contributing programmers include, <a href="https://mike.tig.as/">Mike Tigas</a>, <a href="https://die.netzarchitekten.com/">Benjamin Erhart</a> and <a href="https://guardianproject.info/">Guardian Project</a>.
+  text: Onion Browser is <a href="https://github.com/OnionBrowser/OnionBrowser/">free and open source</a>. Anyone may help contribute, audit or inspect the code. Main contributing programmers include, <a href="https://mike.tig.as/">Mike Tigas</a>, <a href="https://die.netzarchitekten.com/">Benjamin Erhart</a> and <a href="https://guardianproject.info/">Guardian Project</a>.
   github_url: https://github.com/OnionBrowser
   github_label: Follow @OnionBrowser on GitHub
   github_text: Follow @OnionBrowser
