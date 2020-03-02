@@ -19,7 +19,7 @@ donate_form:
 donate_partners:
   - name: PayPal
     url: https://paypal.me/mtigas
-    image: /assets/img/pp.png
+    image: /assets/img/pp.jpg
     alt: PayPal-logo
     text: Send a one-time donation at
 
