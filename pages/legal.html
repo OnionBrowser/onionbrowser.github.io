@@ -1,0 +1,23 @@
+---
+layout: default
+permalink: /legal
+title: Onion Browser | Legal
+description: Onion Browser - Legal page.
+---
+
+{% assign legal_data = site.data.legal %}
+
+<div class="disclaimer-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <div class="disclaimer-inner">
+                    <h1 class="page-header">{{ legal_data.title }}</h1>
+                    {% for item in legal_data.legal_items %}
+                    <p>{{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

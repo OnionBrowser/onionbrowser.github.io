@@ -1,0 +1,24 @@
+---
+layout: default
+permalink: /faqs
+title: Onion Browser | FAQs
+description: Onion Browser - FAQs page.
+---
+
+{% assign faq_data = site.data.faqs %}
+
+<div class="disclaimer-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <div class="disclaimer-inner">
+                    <h1 class="page-header">{{ faq_data.title }}</h1>
+                    {% for item in faq_data.faq_items %}
+                    <h4>{{ item.question }}</h4>
+                    <p>{{ item.answer | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

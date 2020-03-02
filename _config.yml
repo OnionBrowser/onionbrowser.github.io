@@ -1,0 +1,18 @@
+title: Onion Browser
+favicon: /assets/img/favicon.ico
+main_logo: /assets/img/logo-svg.svg
+twitter:
+  username: '@onion_browser'
+  card: summary
+baseurl: "/onionbrowser-website-dev" # the subpath of your site, e.g. /blog
+url: "https://guardianproject.github.io/onionbrowser-website-dev" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+
+sass:
+ sass_dir: _scss
+ style: compressed
+
+exclude:
+  - README.md

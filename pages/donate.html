@@ -1,0 +1,53 @@
+---
+layout: default
+permalink: /donate
+title: Onion Browser | Donate
+description: Support Onion Browser
+---
+
+{% assign donate_data = site.data.donate %}
+
+<div class="tor-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <div class="tor-inner donate">
+                    <div class="tor-header text-center">
+                        <h1>{{ donate_data.title }}</h1>
+                        <div class="donate-form">
+                            <form action="">
+                                <select name="donate" class="selectpicker">
+                                    {% for select in donate_data.donate_form %}
+                                    <option value="{{ select.value }}">{{ select.text }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input id="submit" type="submit" value="" name="submit">
+                            </form>
+                        </div>
+                        <p>{{ donate_data.description }}</p>
+                    </div>
+                    <div class="don-items">
+                        <h4>{{ donate_data.subtitle }}</h4>
+                        {% for item in donate_data.donate_partners %}
+                        <div class="don-item">
+                            <div class="don-thumb">
+                                <img src="{{ site.baseurl }}{{ item.image }}" alt="{{ item.alt }}">
+                            </div>
+                            <div class="don-detail">
+                                <h5>{{ item.name }}</h5>
+                                {% if item.text %}
+                                <p>{{ item.text }} <a href="{{ item.url }}" target="_blank">{{ item.url | remove: "https://" }}</a></p>
+                                {% else %}
+                                <p>{{ item.url }}</p>
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include general/bottom_contact_area.html %}

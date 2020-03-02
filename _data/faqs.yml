@@ -1,0 +1,21 @@
+title: FAQs
+
+
+faq_items:
+  - question: Where can I find information on the latest release, fixes and improvements?
+    answer: We post all releases and release notes on our open-source project page at [https://github.com/OnionBrowser/OnionBrowser/releases](https://github.com/OnionBrowser/OnionBrowser/releases)
+
+  - question: What is Tor?
+    answer: Tor is a network of relays run by volunteers all over the world that allow you to bounce your communications on them which allows you to hide the websites you visit from people watching your internet connection, it also prevents websites you visit from learning your physical location.
+
+  - question: Why is the internet slower when I’m connected to Tor?
+    answer: Because you are bouncing your traffic through relays run by volunteers all over the world and your connection will be affected by bottlenecks and network latency.
+
+  - question: How do I know I’m connected to Tor?
+    answer: Once you open the Onion Browser and after a few seconds establishing a connection to Tor you will be redirected to the Onion Browser website which would indicate that you have successfully connected over Tor. You can also check your connection at any moment going to [https://check.torproject.org/](https://check.torproject.org/), a link created by the Tor team to tell you whether you are connected to Tor or not.
+
+  - question: What are bridges?
+    answer: Bridges are Tor relays that help circumvent censorship. You can try bridges if Tor is blocked by your ISP.
+
+  - question: What’s the difference between browsing with Tor on iOS and browsing with Tor on my computer?
+    answer: The primary difference is that Apple requires we use the WebKit browser component they provie. With Tor Browser on Desktop and Android, the browser is built upon Mozilla's Firefox / Gecko component, which offers greater control and more reliability when it comes to implementing proxying and anti-tracking techniques.

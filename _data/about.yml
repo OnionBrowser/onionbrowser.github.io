@@ -1,0 +1,64 @@
+special_area:
+  title: Onion Browser
+  subtitle: Your trusted connection to Tor on iOS.
+
+
+tor_area:
+  image: /assets/img/Tor.png
+  description: Tor is powered by a diverse network of people. No single company or person has access to your browsing activity when you use Tor.
+  text: Learn about Tor at
+  url: https://torproject.org
+  tor_items:
+    - image: /assets/img/EncryptedTraffic.png
+      alt: EncryptedTraffic-icon
+      title: Encrypted traffic.
+      text: Your internet traffic is encrypted then bounced through three different parts of the world before reaching its destination.
+
+    - image: /assets/img/OnlinePrivacy.png
+      alt: OnlinePrivacy-icon
+      title: Online privacy.
+      text: Websites don’t know who you are. Your real IP address is not revealed.
+
+    - image: /assets/img/NoCensorship.png
+      alt: NoCensorship-icon
+      title: No censorship.
+      text: Gain access to websites and content, regardless of your geography or network restrictions.
+
+    - image: /assets/img/NoSurveillance.png
+      alt: NoSurveillance-icon
+      title: No surveillance.
+      text: Internet service providers (ISP) and wifi network operators cannot see your browsing.
+
+    - image: /assets/img/NoTracking.png
+      alt: NoTracking-icon
+      title: No tracking.
+      text: You’re in control. Disable third parties from tracking you.
+
+
+conneted_area:
+  image: /assets/img/AboutScreens.png
+
+
+disclaimer_area:
+  disclaimer_items:
+    - title: Disclaimer
+      text_nodes:
+        - node: Using Onion Browser does not guarantee security or privacy on its own. It simply provides a set of features that may enhance privacy and anonymity while browsing the web. Please remember the following...
+        - node: Apple requires all web browser apps to use the same core web rendering ending, called UIWebKit or WKWebView. Due to this limitation, we are unable to compile and include our own web engine, based on Firefox Gecko, that other browsers, like Tor Browser on desktop for Android, are allowed to do.
+        - node: Onion Browser only tunnels traffic within the Onion Browser app. If you are using a smartphone be aware that information outside of Onion Browser is not protected.
+        - node: If you use Onion Browser to log into websites that you sometimes log into without Tor (i.e. Facebook), the website will know who you are and know that you are using Tor. In certain circumstances (i.e. political dissents in repressive nations), this may be incriminating.
+        - node: Onion Browser only tunnels traffic within the Onion Browser app. You are still using a smartphone you should be aware that information outside of Onion Browser will continue to use your normal connection.
+        - node: If you log into websites in Onion Browser that you normally log into outside of the Tor network, they will still know who you are and know that you use Tor. In certain circumstances (i.e. political dissent in repressive nations), this may be incriminating information in itself.
+
+    - title: Limitations in iOS
+      text_nodes:
+        - node: <a href="https://github.com/OnionBrowser/OnionBrowser/wiki/Traffic-that-leaks-outside-of-Tor-due-to-iOS-limitations">iOS has full control over some network traffic</a>, which may result in this traffic (including audio or video embeds) routing via your normal connection and not over Tor.
+
+    - title: Geolocation and Advanced HTML5 Features
+      text_nodes:
+        - node: Websites may use the HTML5 Geolocation API (to view your current GPS location) and other new HTML5 features unless "Strict" security mode is set. Users should also remain vigilant for any pop-ups asking for permission to access location data.
+
+    - title: More Information
+      text_nodes:
+        - node: The Tor Project <a href="https://2019.www.torproject.org/about/overview.html.en#stayinganonymous">maintains a small page of tips</a> about staying anonymous while using Tor.
+        - node: A log of Onion Browser <a href="https://github.com/OnionBrowser/OnionBrowser/blob/2.X/CHANGELOG.md">release notes</a>, including previous security issues and results of previous security audits <a href="https://github.com/OnionBrowser/OnionBrowser/blob/2.X/CHANGELOG.md">is available here</a>. You can also see the Github project for a <a href="https://github.com/OnionBrowser/OnionBrowser/issues">current list of known issues.</a>
