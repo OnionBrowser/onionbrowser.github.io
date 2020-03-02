@@ -3,12 +3,15 @@ navigation_links:
     url: /about
   - title: Privacy
     url: /privacy-policy
-  - title: Legal
-    url: /legal
   - title: Download
     url: "https://apps.apple.com/us/app/onion-browser/id519296448"
     external: true
+  - title: Code
+    url: "https://github.com/onionbrowser/onionbrowser"
+    external: true
   - title: Faqs
     url: /faqs
+  - title: Legal
+    url: /legal
   - title: Donate
     url: /donate
