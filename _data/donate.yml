@@ -1,5 +1,5 @@
 title: Support Onion Browser
-description: You may also make a one-time donation through the app. Go to "Help Fund Onion Browser" in the main menu.
+description: You can make a one-time donation through the app. Go to "Help Fund Onion Browser" in the main menu.
 subtitle: More ways to donate
 
 
@@ -17,6 +17,12 @@ donate_form:
 
 
 donate_partners:
+  - name: PayPal
+    url: https://paypal.me/mtigas
+    image: /assets/img/pp.png
+    alt: PayPal-logo
+    text: Send a one-time donation at
+
   - name: BitCoin
     url: 15KxYFRuwWUTXzWjPvJEDrDCZuf76LjrgR
     image: /assets/img/Bitcoin.png
