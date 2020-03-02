@@ -22,8 +22,13 @@ donate_partners:
     image: /assets/img/Bitcoin.png
     alt: Bitcoin-logo
 
-  - name: ZCash
-    url: zs1hv9ux5erpemkcv3rq5e38m5ehhs3jrm7k07a2pkvckynej9hmwg8n 0wd6ef7fq2ymar5jjdp924
+  - name: ZCash (secure z-addr)
+    url: zs1hv9ux5erpemkcv3rq5e38m5ehhs3jrm7k07a2pkvckynej9hmwg8n0wd6ef7fq2ymar5jjdp924
+    image: /assets/img/ZCASH.png
+    alt: ZCash-logo
+
+  - name: ZCash (t-addr)
+    url: t1PieY328RVM13BDFhSK7AbZVegcXP4tfND
     image: /assets/img/ZCASH.png
     alt: ZCash-logo
 

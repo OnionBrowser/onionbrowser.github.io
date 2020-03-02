@@ -15,7 +15,10 @@ description: Support Onion Browser
                     <div class="tor-header text-center">
                         <h1>{{ donate_data.title }}</h1>
                         <div class="donate-form">
-                            <form action="">
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="S5QEHRWR4G3EY">
+                                <input type="hidden" name="currency_code" value="USD">
                                 <select name="donate" class="selectpicker">
                                     {% for select in donate_data.donate_form %}
                                     <option value="{{ select.value }}">{{ select.text }}</option>
