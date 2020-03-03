@@ -36,8 +36,8 @@ detail_area:
   detail_area_items:
     - title: The highest <br />standard of privacy.
       text: Tor offers the highest standard of privacy. You are not linked to your browsing activity. Your location doesn't influence the websites you’re able to visit.
-      image: /assets/img/HighestStandard.png
-      alt: HighestStandard-image
+      image: /assets/img/SecurityLevels.png
+      alt: SecurityLevels-image
 
     - title: Super fast, super secure access to popular sites.
       text: Onion sites are simplified versions of websites that can only be accessed by Tor. They are a sure safe way to connect.
