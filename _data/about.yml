@@ -44,7 +44,7 @@ disclaimer_area:
     - title: Disclaimer
       text_nodes:
         - node: Using Onion Browser does not guarantee security or privacy on its own. It simply provides a set of features that may enhance privacy and anonymity while browsing the web. Please remember the following...
-        - node: Apple requires all web browser apps to use the same core web rendering ending, called UIWebKit or WKWebView. Due to this limitation, we are unable to compile and include our own web engine, based on Firefox Gecko, that other browsers, like Tor Browser on desktop for Android, are allowed to do.
+        - node: Apple requires all web browser apps to use the same core web rendering ending, called UIWebKit or WKWebView. Due to this limitation, we are unable to compile and include our own web engine, based on Firefox Gecko, that other browsers, like Tor Browser on Desktop and Android, are allowed to do.
         - node: Onion Browser only tunnels traffic within the Onion Browser app. Please note that network traffic outside of Onion Browser is not protected and will continue to use your normal connection.
         - node: If you use Onion Browser to log into websites that you normally access outside of the Tor network, the website may be able to identify you and know that you are using Tor. In certain circumstances (e.g. political dissent in repressive nations), this may be incriminating information in itself.
 
