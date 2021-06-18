@@ -7,7 +7,7 @@ When Ruby & Jekyll installed:
 
 ```bash
 # clone the project
-> clone this repo
+> git clone https://github.com/OnionBrowser/onionbrowser.github.io.git
 
 # navigate to the folder
 > cd OnionBrowser
