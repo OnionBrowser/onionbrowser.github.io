@@ -17,29 +17,51 @@ donate_form:
 
 
 donate_partners:
-  - name: PayPal
-    url: https://paypal.me/mtigas
-    image: /assets/img/pp.jpg
-    alt: PayPal-logo
-    text: Send a one-time donation at
-
-  - name: BitCoin
-    url: 15KxYFRuwWUTXzWjPvJEDrDCZuf76LjrgR
-    image: /assets/img/Bitcoin.png
-    alt: Bitcoin-logo
-
-  - name: ZCash (secure z-addr)
-    url: zs1hv9ux5erpemkcv3rq5e38m5ehhs3jrm7k07a2pkvckynej9hmwg8n0wd6ef7fq2ymar5jjdp924
-    image: /assets/img/ZCASH.png
-    alt: ZCash-logo
-
-  - name: ZCash (t-addr)
-    url: t1PieY328RVM13BDFhSK7AbZVegcXP4tfND
-    image: /assets/img/ZCASH.png
-    alt: ZCash-logo
+  - name: GitHub Sponsors
+    url: https://github.com/sponsors/mtigas
+    image: /assets/img/Github.png
+    alt: GitHub-logo
+    text: Back us on
 
   - name: Patreon
     url: https://patreon.com/OnionBrowser
     image: /assets/img/Patreon.png
     alt: Patreon-logo
     text: Back us on
+
+  - name: PayPal
+    url: https://paypal.me/mtigas
+    image: /assets/img/pp.jpg
+    alt: PayPal-logo
+    text: Send a one-time donation at
+
+  - name: Bitcoin (BTC)
+    url: bc1qfy3fvze7w57tzuy42jquwunaf27z4eqkxy8g0w
+    image: /assets/img/Bitcoin.png
+    alt: Bitcoin-logo
+
+  - name: Bitcoin (BTC, legacy address)
+    url: 1EW5CTQjT9JxvcEhCZEK5zDqMEQwGFh4YW
+    image: /assets/img/Bitcoin.png
+    alt: Bitcoin-logo
+
+  - name: Ethereum (ETH)
+    url: "0xea715604E595155E60d27dc9E6CDa0e17594Bf14"
+    image: /assets/img/Ethereum.png
+    alt: Ethereum-logo
+
+  - name: Monero (XMR)
+    url: 84EJFkaSh6H7Vgsapefq6Aa3woTk3wyo2DtBaDnBWpMfFKVTC747ESm2spmnnsVtAe1TTMDp6SY2m5RNxMKJbToSNixRCbr
+    image: /assets/img/Monero.png
+    alt: Monero-logo
+
+  - name: Zcash (ZEC, secure z-addr)
+    url: zs1hv9ux5erpemkcv3rq5e38m5ehhs3jrm7k07a2pkvckynej9hmwg8n0wd6ef7fq2ymar5jjdp924
+    image: /assets/img/ZCASH.png
+    alt: Zcash-logo
+
+  - name: Zcash (ZEC, t-addr)
+    url: t1VK2sTwm6ac8zizRdA3gjs3yyiJVVn2GeY
+    image: /assets/img/ZCASH.png
+    alt: Zcash-logo
+
