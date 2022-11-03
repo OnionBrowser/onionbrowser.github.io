@@ -43,9 +43,3 @@ donate_partners:
     image: /assets/img/Patreon.png
     alt: Patreon-logo
     text: Back us on
-
-  - name: BitPatron
-    url: https://bitpatron.co/miketigas.id.blockstack
-    image: /assets/img/Bitpatron.png
-    alt: BitPatron-logo
-    text: Back us on
