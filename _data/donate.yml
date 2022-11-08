@@ -35,8 +35,18 @@ donate_partners:
     alt: PayPal-logo
     text: Send a one-time donation at
 
+  - name: Ethereum (ETH)
+    url: "0x7fb8C9aEEAAFD1023602147728c4D768d099d3d4"
+    image: /assets/img/Ethereum.png
+    alt: Ethereum-logo
+
+  - name: Monero (XMR)
+    url: 8AhhYzXHW8a4MHjqFB7d1xdijjZk67zJEiz18pbb3CzgENMnLdi4a3ZbwwQsYSuu97A6FvypZcrk36Fc31PGW1wn5U2XpSf
+    image: /assets/img/Monero.png
+    alt: Monero-logo
+
   - name: Bitcoin (BTC)
-    url: bc1qfy3fvze7w57tzuy42jquwunaf27z4eqkxy8g0w
+    url: bc1qqaaevnjsq44r9mdsuu4twppex0t4d47zcav863
     image: /assets/img/Bitcoin.png
     alt: Bitcoin-logo
 
@@ -45,23 +55,13 @@ donate_partners:
     image: /assets/img/Bitcoin.png
     alt: Bitcoin-logo
 
-  - name: Ethereum (ETH)
-    url: "0xea715604E595155E60d27dc9E6CDa0e17594Bf14"
-    image: /assets/img/Ethereum.png
-    alt: Ethereum-logo
-
-  - name: Monero (XMR)
-    url: 84EJFkaSh6H7Vgsapefq6Aa3woTk3wyo2DtBaDnBWpMfFKVTC747ESm2spmnnsVtAe1TTMDp6SY2m5RNxMKJbToSNixRCbr
-    image: /assets/img/Monero.png
-    alt: Monero-logo
-
   - name: Zcash (ZEC, secure z-addr)
     url: zs1hv9ux5erpemkcv3rq5e38m5ehhs3jrm7k07a2pkvckynej9hmwg8n0wd6ef7fq2ymar5jjdp924
     image: /assets/img/ZCASH.png
     alt: Zcash-logo
 
   - name: Zcash (ZEC, t-addr)
-    url: t1VK2sTwm6ac8zizRdA3gjs3yyiJVVn2GeY
+    url: t1eqUdGYdpurvJbE9xHf9EqSHYRxEdGDEdN
     image: /assets/img/ZCASH.png
     alt: Zcash-logo
 
