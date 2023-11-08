@@ -12,10 +12,32 @@ faq_items:
     answer: Because you are bouncing your traffic through relays run by volunteers all over the world and your connection will be affected by bottlenecks and network latency.
 
   - question: How do I know I’m connected to Tor?
-    answer: Once you open the Onion Browser and after a few seconds establishing a connection to Tor you will be redirected to the Onion Browser website which would indicate that you have successfully connected over Tor. You can also check your connection at any moment going to [https://check.torproject.org/](https://check.torproject.org/), a link created by the Tor team to tell you whether you are connected to Tor or not.
+    answer: You can check your connection at any moment going to [check.torproject.org](https://check.torproject.org/), a link created by the Tor team to tell you whether you are connected to Tor or not.
 
   - question: What are bridges?
     answer: Bridges are Tor relays that help circumvent censorship. You can try bridges if Tor is blocked by your ISP.
 
   - question: What’s the difference between browsing with Tor on iOS and browsing with Tor on my computer?
     answer: The primary difference is that Apple requires we use the WebKit browser component they provide. With Tor Browser on Desktop and Android, the browser is built upon Mozilla's Firefox / Gecko component, which offers greater control and more reliability when it comes to implementing proxying and anti-tracking techniques.
+
+  - question: Should any benefits related strictly to the connection over Tor (like hiding the IP) be counted as benefits of using Onion Browser specifically? Does Safari work differently in this regard?
+    answer: Since version 3, Onion Browser relies on [Orbot](https://orbot.app/). Since Orbot tunnels *all* device traffic through Tor, the benefits of Tor also apply when used with Safari. Since version 3.1, however, Onion Browser, comes with an in-app Tor again (iOS 17 only!) to support situations, where Orbot cannot be used.
+
+  - question: Does Onion Browser provide better protection against privacy-, security- or anonymity-harming behaviour from Apple than Safari does, and how?
+    answer: First and foremost, Onion Browser does explicitly make sure, that no request goes out without Tor running and catching that request. Additionally, there are more measures which help with your security and privacy, like automatically forgetting everything when sent to the background, not keeping caches and cookies by default, preventing automatic jumps into installed apps, not sending everything you type to a search engine or being able to deny JavaScript for specific sites easily and many more details, all configurable.
+
+  - question: What other general improvements does Onion Browser make to security, privacy, or usability which can’t be replicated on Safari?
+    answer: There are many measures which help with your security and privacy, like automatically forgetting everything when sent to the background, not keeping caches and cookies by default, preventing automatic jumps into installed apps, not sending everything you type to a search engine or being able to deny JavaScript for specific sites easily and many more details, all configurable. Additionally, as Onion Browser is Tor-aware, it can automatically redirect you to `.onion` addresses, if a website advertises one, and it can help you send a proper `User-Agent` header like other Tor browsers, which may keep you from needing to answer CAPTCHAs of certain CDNs (Content Delivery Networks).
+
+  - question: How does the fingerprint of Onion Browser differ from Safari, and how does that impact fingerprinting protection?
+    answer: As per Apple's policy, all apps on iOS need to use iOS' built-in WebKit rendering engine, which has very few levers to change things. Insofar, we believe, it's best, if you look very much like every other iOS user. You will only appear differently, once you start changing your `User-Agent` header.
+
+  - question: Which privacy or security improvements can any iOS-browser that's not controlled by Apple make? What exactly is the extent to which restrictions from Apple fundamentally limit such improvements?
+    answer: We believe Onion Browser to be the best example of what hardening is possible on modern iOS today. Some features are already mentioned in other answers here. For the full picture, we suggest you do a deep dive into Onion Browser's settings to see for yourself.
+
+  - question: What are the advantages of using Onion Browser instead of Safari?
+    answer: When browsing over the Tor network, it's always advantagous to use a Tor-aware browser. Onion Browser can detect when websites advertise an alternate `.onion` service and automatically switch you over. This increases security, since you don't even use an exit node anymore. Onion Browser by default also uses the privacy-preserving DDG as a search engine - via its onion-address. It can show you the circuit used to contact a site, so you can understand, why it might show you specifically localized content. And last, but-not least, Onion Browser uses safe defaults which make sure, you don't accidentally reveal things you don't want to reveal in situations where you are pressured to do so.
+
+  - question: What are the differences between using Orbot and the built-in Tor?
+    answer: Orbot is *safer*. When using the built-in Tor, you will unfortunately leak your real IP address to websites via `WebRTC`. Also, audio and video streams cannot be tunneled through Tor. This is a limitation of the WebKit rendering engine provided (and enforced) by Apple. The built-in Tor is *more stable* than Orbot. Orbot uses a technology provided by Apple which is called "Network Extensions". However, Apple limits these extensions to 50 MB of RAM usage, which is very, very little nowadays, especially on devices which have at least 3 GB RAM. Newer developments in the Tor protocol and intermittent attack attempts to the Tor network unfortunately bring the Tor client to the edge of this 50 MB limit, hence it gets killed and needs to restart. This is very annoying, but we cannot currently do anything about it, except waiting on Apple to finally increase this limit to something more sensible.
+
