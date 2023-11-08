@@ -27,7 +27,7 @@ tor_area:
     - image: /assets/img/NoSurveillance.png
       alt: NoSurveillance-icon
       title: No surveillance.
-      text: Internet service providers (ISP) and wifi network operators cannot see your browsing.
+      text: Internet service providers (ISP) and WiFi network operators cannot see what you're browsing.
 
     - image: /assets/img/NoTracking.png
       alt: NoTracking-icon
