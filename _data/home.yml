@@ -55,11 +55,11 @@ featured_area:
   featured_area_items:
     - image: /assets/img/NewYorkTimes.png
       alt: NewYorkTimes-logo
-      url: "http://www.nytimes.com/2014/02/20/technology/personaltech/privacy-please-tools-to-shield-your-smartphone-from-snoopers.html"
+      url: "https://www.nytimes.com/2014/02/20/technology/personaltech/privacy-please-tools-to-shield-your-smartphone-from-snoopers.html"
 
     - image: /assets/img/TheGuardian.png
       alt: TheGuardian-logo
-      url: "http://www.guardian.co.uk/technology/appsblog/2012/apr/27/apps-rush-linkedin-frankenstein-o2wallet"
+      url: "https://www.theguardian.com/technology/appsblog/2012/apr/27/apps-rush-linkedin-frankenstein-o2wallet"
 
     - image: /assets/img/ArsTechnica.jpg
       alt: ArsTechnica-logo
@@ -67,19 +67,15 @@ featured_area:
 
     - image: /assets/img/TechCrunch.png
       alt: TechCrunch-logo
-      url: "http://techcrunch.com/2012/04/26/onion-browser-a-mobile-browser-for-the-truly-paranoid/"
+      url: "https://techcrunch.com/2012/04/26/onion-browser-a-mobile-browser-for-the-truly-paranoid/"
 
     - image: /assets/img/BoingBoing.png
       alt: BoingBoing-logo
-      url: "http://boingboing.net/2012/04/26/encrypted-browser-for-ipad-and.html"
+      url: "https://boingboing.net/2012/04/26/encrypted-browser-for-ipad-and.html"
 
     - image: /assets/img/LifeHacker.png
       alt: LifeHacker-logo
-      url: "http://lifehacker.com/5905305/onion-browser-is-an-encrypted-mobile-browser-for-ios"
-
-    - image: /assets/img/Gizmodo.png
-      alt: Gizmodo-logo
-      url: "http://gizmodo.com/5905265/onion-browser-brings-encrypted-web-browsing-to-the-iphone"
+      url: "https://lifehacker.com/onion-browser-is-an-encrypted-mobile-browser-for-ios-5905305"
 
 
 special_area:
