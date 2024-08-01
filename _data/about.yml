@@ -59,4 +59,4 @@ disclaimer_area:
     - title: More Information
       text_nodes:
         - node: The Tor Project <a href="https://2019.www.torproject.org/about/overview.html.en#stayinganonymous">maintains a small page of tips</a> about staying anonymous while using Tor.
-        - node: A log of Onion Browser <a href="https://github.com/OnionBrowser/OnionBrowser/blob/2.X/CHANGELOG.md">release notes</a>, including previous security issues and results of previous security audits <a href="https://github.com/OnionBrowser/OnionBrowser/blob/2.X/CHANGELOG.md">is available here</a>. You can also see the GitHub project for a <a href="https://github.com/OnionBrowser/OnionBrowser/issues">current list of known issues.</a>
+        - node: A log of Onion Browser <a href="https://github.com/OnionBrowser/OnionBrowser/blob/3.X/CHANGELOG.md">release notes</a>, including previous security issues and results of previous security audits <a href="https://github.com/OnionBrowser/OnionBrowser/blob/3.X/CHANGELOG.md">is available here</a>. You can also see the GitHub project for a <a href="https://github.com/OnionBrowser/OnionBrowser/issues">current list of known issues.</a>
