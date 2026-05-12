@@ -17,6 +17,22 @@ donate_form:
 
 
 donate_partners:
+  - name: Bitcoin - bc1q268a7ygpnjf9y2m48090eukuyha7q2zzldqhjc
+    url: https://bitcoin.org/
+    image: /assets/img/Bitcoin.png
+    alt: Bitcoin-logo
+  - name: Ethereum - 0x278D609B0d377274917d5757f31c0f6447f3ad19
+    url: https://ethereum.org/
+    image: /assets/img/Ethereum.png
+    alt: Ethereum-logo
+  - name: Monero - 436sKqJM2qTAie1L5t5PAnfQFNMFkkWfjj1EgcygDvGubt3uB6p4F7xj35tkZbQfG9iuVRTTspWevjUYbfVCELWs2AJELCK
+    url: https://www.getmonero.org/
+    image: /assets/img/Monero.png
+    alt: Ethereum-logo
+  - name: Zcash - t1NVLzGTF8quPSqLgDqsuYpHDvwL459XuwE
+    url: https://z.cash/
+    image: /assets/img/Zcash.png
+    alt: Ethereum-logo
   - name: Liberapay
     url: https://liberapay.com/GuardianProject
     image: /assets/img/Liberapay.svg
