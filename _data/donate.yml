@@ -17,24 +17,36 @@ donate_form:
 
 
 donate_partners:
-  - name: Bitcoin - bc1q268a7ygpnjf9y2m48090eukuyha7q2zzldqhjc
-    url: https://bitcoin.org/
+  - name: Open Collective
+    url: https://opencollective.com/guardianproject
+    image: /assets/oc.png
+    alt: Open Collective Logo
+    text: Send a one-time or recurring donation at
+  - name: GitHub Sponsors
+    url: https://github.com/sponsors/guardianproject
+    image: /assets/img/github.png
+    alt: GitHub logo
+    text: Sponsor us on
+  - name: PayPal
+    url: https://paypal.me/guardianproject
+    image: /assets/img/pp.jpg
+    alt: PayPal logo
+    text: Send a one-time donation at
+  - name: Bitcoin
+    url: 198fHnKSkXboZLWqVi2KTRdNrPbdh34Ya5
     image: /assets/img/Bitcoin.png
-    alt: Bitcoin-logo
-  - name: Ethereum - 0x278D609B0d377274917d5757f31c0f6447f3ad19
-    url: https://ethereum.org/
-    image: /assets/img/Ethereum.png
-    alt: Ethereum-logo
-  - name: Monero - 436sKqJM2qTAie1L5t5PAnfQFNMFkkWfjj1EgcygDvGubt3uB6p4F7xj35tkZbQfG9iuVRTTspWevjUYbfVCELWs2AJELCK
-    url: https://www.getmonero.org/
-    image: /assets/img/Monero.png
-    alt: Ethereum-logo
-  - name: Zcash - t1NVLzGTF8quPSqLgDqsuYpHDvwL459XuwE
-    url: https://z.cash/
-    image: /assets/img/ZCASH.png
-    alt: Ethereum-logo
+    alt: Bitcoin logo
+  - name: Ether
+    url: '133170647542866872072615948397500080356915441689'
+    image: /assets/img/Ether.png
+    alt: Ether-logo
+  - name: Patreon
+    url: https://patreon.com/GuardianProject
+    image: /assets/img/Patreon.png
+    alt: Patreon logo
+    text: Back us on
   - name: Liberapay
     url: https://liberapay.com/GuardianProject
-    image: /assets/img/Liberapay.svg
-    alt: Liberapay-logo
-    text: Back us on
+    image: /assets/img/liberapay.svg
+    alt: Liberapay-img
+    text: Donate to us on
