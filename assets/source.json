@@ -153,11 +153,11 @@
 			"versions": [
 				{
 					"version": "3.4.6",
-					"buildVersion": "201802.281312247",
+					"buildVersion": "211840.296079910",
 					"date": "2026-11-09",
-					"localizedDescription": "- Updated Tor to 0.4.9.16.\n- Updated Lyrebird to 0.10.0.\n- Updated Snowflake to 2.15.3.\n- Minor layout improvements for iPhone Duo.",
+					"localizedDescription": "- Updated Tor to 0.4.9.17.\n- Updated Lyrebird to 0.10.0.\n- Updated Snowflake to 2.15.3.\n- Minor layout improvements for iPhone Duo.",
 					"downloadURL": "https://github.com/OnionBrowser/OnionBrowser/releases/download/v3.4.6/OnionBrowser.ipa",
-					"size": 48219749
+					"size": 37481525
 				}
 			]
 		},
