@@ -1,0 +1,206 @@
+{
+	"name": "Guardian Project",
+	"website": "https://guardianproject.info",
+	"subtitle": "Official AltStore Source for all things Guardian Project",
+	"description": "A repository for all things Guardian Project provides for iOS.",
+	"tintColor": "#04A052",
+	"iconURL": "https://guardianproject.info/Logomark/Guardian_Project_Logomark___Multicolor_Full_Color_Rgb%201.png",
+	"apps": [
+		{
+			"name": "Onion Browser",
+			"bundleIdentifier": "com.miketigas.OnionBrowser",
+			"developerName": "Guardian Project",
+			"subtitle": "Onion Browser is your trusted connection to Tor on iOS.",
+			"localizedDescription": "Browsing is private.\n\nEncrypted traffic through the Tor network gives you the highest standard of security and privacy.\n\nNo extras.\n\nNo extra eyes see your activity, save your history or influence your browsing. Targeted ads are history.\n\nToss your history.\n\nTabs don’t hang around. They close when you’re done, so every search is new.",
+			"iconURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/misc/appicon.png",
+			"tintColor": "#3E2B4F",
+			"category": "other",
+			"screenshots": [
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/1_iphone65_1.1.png",
+					"width": 1290,
+					"height": 2796
+				},
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/2_iphone65_2.2.png",
+					"width": 1290,
+					"height": 2796
+				},
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/3_iphone65_3.3.png",
+					"width": 1290,
+					"height": 2796
+				},
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/4_iphone65_4.4.png",
+					"width": 1290,
+					"height": 2796
+				},
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/5_iphone65_5.5.png",
+					"width": 1290,
+					"height": 2796
+				},
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/6_iphone65_6.6.png",
+					"width": 1290,
+					"height": 2796
+				},
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/1_iphone6Plus_1.1.png",
+					"width": 1242,
+					"height": 2208
+				},
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/2_iphone6Plus_2.2.png",
+					"width": 1242,
+					"height": 2208
+				},
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/3_iphone6Plus_3.3.png",
+					"width": 1242,
+					"height": 2208
+				},
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/4_iphone6Plus_4.4.png",
+					"width": 1242,
+					"height": 2208
+				},
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/5_iphone6Plus_5.5.png",
+					"width": 1242,
+					"height": 2208
+				},
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/6_iphone6Plus_6.6.png",
+					"width": 1242,
+					"height": 2208
+				},
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/1_ipadPro_1.1.png",
+					"width": 2732,
+					"height": 2048
+				},
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/2_ipadPro_2.2.png",
+					"width": 2732,
+					"height": 2048
+				},
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/3_ipadPro_3.3.png",
+					"width": 2732,
+					"height": 2048
+				},
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/4_ipadPro_4.4.png",
+					"width": 2732,
+					"height": 2048
+				},
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/5_ipadPro_5.5.png",
+					"width": 2732,
+					"height": 2048
+				},
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/6_ipadPro_6.6.png",
+					"width": 2732,
+					"height": 2048
+				},
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/1_ipadPro129_1.1.png",
+					"width": 2732,
+					"height": 2048
+				},
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/2_ipadPro129_2.2.png",
+					"width": 2732,
+					"height": 2048
+				},
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/3_ipadPro129_3.3.png",
+					"width": 2732,
+					"height": 2048
+				},
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/4_ipadPro129_4.4.png",
+					"width": 2732,
+					"height": 2048
+				},
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/5_ipadPro129_5.5.png",
+					"width": 2732,
+					"height": 2048
+				},
+				{
+					"imageURL": "https://raw.githubusercontent.com/OnionBrowser/OnionBrowser/refs/heads/3.X/fastlane/screenshots/en-US/6_ipadPro129_6.6.png",
+					"width": 2732,
+					"height": 2048
+				}
+			],
+			"appPermissions": {
+				"entitlements": [
+					"com.apple.developer.default-data-protection",
+					"com.apple.developer.siri",
+					"com.apple.developer.web-browser",
+					"beta-reports-active"
+				],
+				"privacy": {
+					"NSPhotoLibraryAddUsageDescription": "Needed to store the selected image to your photos.",
+					"NSCameraUsageDescription": "Needed to read bridge addresses from displayed QR codes.",
+					"NSFaceIDUsageDescription": "Needed, if you want to unlock the app with Face ID."
+				}
+			},
+			"versions": [
+				{
+					"version": "3.4.6",
+					"buildVersion": "201802.281312247",
+					"date": "2026-11-09",
+					"localizedDescription": "- Updated Tor to 0.4.9.16.\n- Updated Lyrebird to 0.10.0.\n- Updated Snowflake to 2.15.3.\n- Minor layout improvements for iPhone Duo.",
+					"downloadURL": "https://github.com/OnionBrowser/OnionBrowser/releases/download/v3.4.6/OnionBrowser.ipa",
+					"size": 48219749
+				}
+			]
+		},
+		{
+			"name": "Onion Cider",
+			"bundleIdentifier": "com.netzarchitekten.onion-cider",
+			"developerName": "Guardian Project",
+			"subtitle": "An experimental Tor-enabled, Gecko-based web browser for iOS 15+.",
+			"localizedDescription": "Onion Cider is a Tor-enabled, Gecko-based mobile web browser for iOS 15+.\n\nUnlike other browsers on iOS that are forced to use Apple's WebKit engine (including Safari and all third-party browsers), Onion Cider uses Gecko. This is the same engine that powers the Firefox browser on desktop and Android devices.\n\n Additionally, it contains a Tor client and support for different bridge types. \n\nSource code is available on GitHub at https://github.com/tladesignz/onion-cider.",
+			"iconURL": "https://raw.githubusercontent.com/tladesignz/onion-cider/refs/heads/main/browser/Reynard/Resources/Assets.xcassets/AppIcon.appiconset/onion-cider.png",
+			"tintColor": "#3E2B4F",
+			"category": "other",
+			"screenshotURLs": [
+				"https://raw.githubusercontent.com/tladesignz/onion-cider/refs/heads/main/misc/screenshot-1.png",
+				"https://raw.githubusercontent.com/tladesignz/onion-cider/refs/heads/main/misc/screenshot-2.png",
+				"https://raw.githubusercontent.com/tladesignz/onion-cider/refs/heads/main/misc/screenshot-3.png",
+				"https://raw.githubusercontent.com/tladesignz/onion-cider/refs/heads/main/misc/screenshot-4.png"
+			],
+			"appPermissions": {
+				"entitlements": [
+					"com.apple.developer.kernel.increased-memory-limit",
+					"get-task-allow"
+				],
+				"privacy": {
+					"NSCameraUsageDescription": "Camera access lets websites in this browser scan QR codes, capture photos, and start video calls.",
+					"NSMicrophoneUsageDescription": "Microphone access lets websites in this browser capture your voice for calls and audio recordings.",
+					"NSPhotoLibraryAddUsageDescription": "Photo library access lets this browser save images and other media you download from websites to Photos.",
+					"NSPhotoLibraryUsageDescription": "Photo library access lets this browser upload photos and videos from your library and save images and other media you download from websites to Photos.",
+					"NSLocationWhenInUseUsageDescription": "Location access lets websites in this browser provide location-based content such as maps, directions, and nearby places.",
+					"NSBluetoothAlwaysUsageDescription": "Bluetooth access lets websites in this browser connect to nearby Bluetooth devices."
+				}
+			},
+			"versions": [
+				{
+					"version": "0.21.0",
+					"buildVersion": "1",
+					"date": "2026-11-12T13:31:56Z",
+					"localizedDescription": "First alpha release.",
+					"downloadURL": "https://github.com/tladesignz/onion-cider/releases/download/0.21.0/Onion.Cider.ipa",
+					"size": 130215395
+				}
+			]
+		}
+	],
+	"news": []
+}

@@ -3,6 +3,9 @@ banner_area:
   title: Free to be you.
   app_store_url: https://apps.apple.com/us/app/onion-browser/id519296448
   app_store_button: /assets/img/app-store.png
+  alt_store_url1: https://altdirect.app/?url=
+  alt_store_url2: /assets/source.json
+  alt_store_button: /assets/img/Altstore.png
   image: /assets/img/LandingPage.png
 
 
