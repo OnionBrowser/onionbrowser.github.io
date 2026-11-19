@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "68QUP6KP2C.com.miketigas.OnionBrowser"
+        ],
+        "components": [
+          {
+            "/": "/orbot/*"
+          }
+        ]
+      }
+    ]
+  }
+}
